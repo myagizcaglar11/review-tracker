@@ -1,8 +1,8 @@
 {
  "updated": "2026-11-11",
- "n": 9050,
+ "n": 10000,
  "methods": {
-  "rules": 9050
+  "rules": 10000
  },
  "markets": [
   "us",
@@ -10,7 +10,7 @@
   "ca",
   "au"
  ],
- "first_date": "2024-04-26",
+ "first_date": "2024-04-25",
  "last_date": "2026-11-10",
  "themes": {
   "ad_mismatch": {
@@ -73,48 +73,48 @@
    "key": "royal_match",
    "name": "Royal Match",
    "studio": "Dream Games",
-   "n": 2000,
-   "n_neg": 772,
-   "n_pos": 1060,
-   "avg_rating": 3.29,
+   "n": 2500,
+   "n_neg": 945,
+   "n_pos": 1335,
+   "avg_rating": 3.33,
    "by_store": {
-    "app_store": 1500,
+    "app_store": 2000,
     "google_play": 500
    },
    "neg": {
-    "ad_mismatch": 15.3,
-    "save_king": 7.6,
-    "money": 25.4,
-    "difficulty": 11.8,
-    "boring": 7.5,
-    "bugs": 1.2
+    "ad_mismatch": 23.8,
+    "save_king": 7.2,
+    "money": 32.4,
+    "difficulty": 15.2,
+    "boring": 7.0,
+    "bugs": 1.7
    },
    "pos": {
-    "fun": 47.8,
-    "relaxing": 5.3,
+    "fun": 59.0,
+    "relaxing": 5.1,
     "no_ads": 6.8,
-    "story_building": 1.2
+    "story_building": 0.3
    },
    "monthly": [
     {
      "month": "2025-12",
-     "n": 53,
-     "n_neg": 28,
+     "n": 52,
+     "n_neg": 27,
      "n_pos": 18,
-     "avg_rating": 2.62,
+     "avg_rating": 2.65,
      "neg": {
-      "ad_mismatch": 14.3,
+      "ad_mismatch": 18.5,
       "save_king": 0.0,
-      "money": 35.7,
-      "difficulty": 7.1,
+      "money": 37.0,
+      "difficulty": 14.8,
       "boring": 0.0,
-      "bugs": 0.0
+      "bugs": 3.7
      },
      "pos": {
-      "fun": 66.7,
+      "fun": 77.8,
       "relaxing": 11.1,
       "no_ads": 11.1,
-      "story_building": 11.1
+      "story_building": 0.0
      }
     },
     {
@@ -124,18 +124,18 @@
      "n_pos": 33,
      "avg_rating": 2.57,
      "neg": {
-      "ad_mismatch": 22.4,
+      "ad_mismatch": 34.5,
       "save_king": 10.3,
-      "money": 20.7,
+      "money": 24.1,
       "difficulty": 10.3,
-      "boring": 3.4,
+      "boring": 5.2,
       "bugs": 0.0
      },
      "pos": {
-      "fun": 63.6,
-      "relaxing": 12.1,
+      "fun": 66.7,
+      "relaxing": 9.1,
       "no_ads": 3.0,
-      "story_building": 9.1
+      "story_building": 0.0
      }
     },
     {
@@ -145,7 +145,7 @@
      "n_pos": 24,
      "avg_rating": 2.74,
      "neg": {
-      "ad_mismatch": 25.7,
+      "ad_mismatch": 37.1,
       "save_king": 11.4,
       "money": 11.4,
       "difficulty": 5.7,
@@ -153,7 +153,7 @@
       "bugs": 2.9
      },
      "pos": {
-      "fun": 70.8,
+      "fun": 75.0,
       "relaxing": 8.3,
       "no_ads": 12.5,
       "story_building": 0.0
@@ -166,7 +166,7 @@
      "n_pos": 26,
      "avg_rating": 2.93,
      "neg": {
-      "ad_mismatch": 5.9,
+      "ad_mismatch": 8.8,
       "save_king": 8.8,
       "money": 26.5,
       "difficulty": 2.9,
@@ -174,8 +174,8 @@
       "bugs": 2.9
      },
      "pos": {
-      "fun": 73.1,
-      "relaxing": 3.8,
+      "fun": 76.9,
+      "relaxing": 7.7,
       "no_ads": 3.8,
       "story_building": 0.0
      }
@@ -189,13 +189,13 @@
      "neg": {
       "ad_mismatch": 20.0,
       "save_king": 14.3,
-      "money": 14.3,
-      "difficulty": 8.6,
+      "money": 20.0,
+      "difficulty": 11.4,
       "boring": 2.9,
       "bugs": 0.0
      },
      "pos": {
-      "fun": 83.3,
+      "fun": 86.7,
       "relaxing": 6.7,
       "no_ads": 10.0,
       "story_building": 0.0
@@ -203,21 +203,21 @@
     },
     {
      "month": "2026-05",
-     "n": 84,
-     "n_neg": 29,
+     "n": 83,
+     "n_neg": 28,
      "n_pos": 49,
-     "avg_rating": 3.42,
+     "avg_rating": 3.45,
      "neg": {
-      "ad_mismatch": 6.9,
+      "ad_mismatch": 14.3,
       "save_king": 0.0,
-      "money": 44.8,
-      "difficulty": 20.7,
-      "boring": 3.4,
+      "money": 46.4,
+      "difficulty": 25.0,
+      "boring": 3.6,
       "bugs": 0.0
      },
      "pos": {
-      "fun": 67.3,
-      "relaxing": 6.1,
+      "fun": 71.4,
+      "relaxing": 2.0,
       "no_ads": 0.0,
       "story_building": 0.0
      }
@@ -229,36 +229,36 @@
      "n_pos": 85,
      "avg_rating": 3.3,
      "neg": {
-      "ad_mismatch": 9.1,
+      "ad_mismatch": 25.8,
       "save_king": 7.6,
-      "money": 22.7,
-      "difficulty": 16.7,
+      "money": 25.8,
+      "difficulty": 19.7,
       "boring": 6.1,
-      "bugs": 3.0
+      "bugs": 4.5
      },
      "pos": {
-      "fun": 56.5,
-      "relaxing": 3.5,
-      "no_ads": 10.6,
-      "story_building": 1.2
+      "fun": 65.9,
+      "relaxing": 2.4,
+      "no_ads": 11.8,
+      "story_building": 0.0
      }
     },
     {
      "month": "2026-07",
      "n": 167,
-     "n_neg": 74,
+     "n_neg": 73,
      "n_pos": 83,
-     "avg_rating": 3.11,
+     "avg_rating": 3.13,
      "neg": {
-      "ad_mismatch": 13.5,
+      "ad_mismatch": 27.4,
       "save_king": 6.8,
-      "money": 32.4,
-      "difficulty": 14.9,
+      "money": 37.0,
+      "difficulty": 16.4,
       "boring": 6.8,
       "bugs": 1.4
      },
      "pos": {
-      "fun": 60.2,
+      "fun": 66.3,
       "relaxing": 3.6,
       "no_ads": 10.8,
       "story_building": 0.0
@@ -271,16 +271,16 @@
      "n_pos": 99,
      "avg_rating": 3.25,
      "neg": {
-      "ad_mismatch": 13.5,
+      "ad_mismatch": 23.0,
       "save_king": 2.7,
-      "money": 35.1,
-      "difficulty": 20.3,
-      "boring": 5.4,
+      "money": 45.9,
+      "difficulty": 21.6,
+      "boring": 4.1,
       "bugs": 0.0
      },
      "pos": {
-      "fun": 62.6,
-      "relaxing": 8.1,
+      "fun": 74.7,
+      "relaxing": 7.1,
       "no_ads": 10.1,
       "story_building": 1.0
      }
@@ -292,185 +292,131 @@
      "n_pos": 71,
      "avg_rating": 2.83,
      "neg": {
-      "ad_mismatch": 25.0,
+      "ad_mismatch": 41.7,
       "save_king": 15.5,
-      "money": 20.2,
+      "money": 21.4,
       "difficulty": 7.1,
       "boring": 9.5,
       "bugs": 1.2
      },
      "pos": {
-      "fun": 49.3,
-      "relaxing": 7.0,
+      "fun": 62.0,
+      "relaxing": 8.5,
       "no_ads": 8.5,
       "story_building": 1.4
      }
     },
     {
      "month": "2026-10",
-     "n": 160,
-     "n_neg": 76,
-     "n_pos": 67,
-     "avg_rating": 2.92,
+     "n": 497,
+     "n_neg": 193,
+     "n_pos": 251,
+     "avg_rating": 3.27,
      "neg": {
-      "ad_mismatch": 15.8,
-      "save_king": 3.9,
-      "money": 23.7,
-      "difficulty": 10.5,
-      "boring": 10.5,
-      "bugs": 1.3
+      "ad_mismatch": 23.3,
+      "save_king": 6.2,
+      "money": 34.2,
+      "difficulty": 16.6,
+      "boring": 7.8,
+      "bugs": 2.1
      },
      "pos": {
-      "fun": 55.2,
-      "relaxing": 7.5,
-      "no_ads": 16.4,
-      "story_building": 1.5
+      "fun": 67.3,
+      "relaxing": 6.4,
+      "no_ads": 9.6,
+      "story_building": 0.8
      }
     },
     {
      "month": "2026-11",
-     "n": 536,
-     "n_neg": 87,
-     "n_pos": 421,
-     "avg_rating": 4.18,
+     "n": 703,
+     "n_neg": 148,
+     "n_pos": 512,
+     "avg_rating": 3.99,
      "neg": {
-      "ad_mismatch": 10.3,
-      "save_king": 4.6,
-      "money": 18.4,
-      "difficulty": 10.3,
-      "boring": 9.2,
-      "bugs": 1.1
+      "ad_mismatch": 13.5,
+      "save_king": 3.4,
+      "money": 37.2,
+      "difficulty": 17.6,
+      "boring": 6.8,
+      "bugs": 1.4
      },
      "pos": {
-      "fun": 26.8,
-      "relaxing": 3.1,
-      "no_ads": 2.6,
-      "story_building": 1.0
+      "fun": 42.4,
+      "relaxing": 3.5,
+      "no_ads": 3.1,
+      "story_building": 0.0
      }
     }
    ],
    "quotes": {
-    "save_king": [
-     {
-      "date": "2026-11-08",
-      "rating": 4,
-      "store": "google_play",
-      "text": "Great fun and varried games. I would like to stay on the degree of difficulty I like, rather than getting so difficult games can take 20 goes each, and getting…"
-     },
-     {
-      "date": "2026-11-08",
-      "rating": 4,
-      "store": "google_play",
-      "text": "it's good though the way they attracted me to the game isn't what happens, thought I will be saving the king everytime I play , but it only comes as the king's…"
-     },
-     {
-      "date": "2026-11-08",
-      "rating": 1,
-      "store": "google_play",
-      "text": "• \"Fake ads, completely different gameplay!,Don't download if you want to play the rescue levels shown in ads.\""
-     }
-    ],
-    "ad_mismatch": [
+    "money": [
      {
       "date": "2026-11-10",
       "rating": 1,
       "store": "google_play",
-      "text": "SAME AS ROYAL KINGDOM BUT THIS OLD MAN FREAKING LIES TO YOU IN THE ADS THEY LIKE OH THIS GAME LIKE THE ADS NOPE FAKE NEVER DOWNLOAD AND PLEASE UNINSTALL IF…"
+      "text": "I can't stand that they are constantly looking for money. I enjoy playing but it makes me mad."
      },
      {
-      "date": "2026-11-08",
+      "date": "2026-11-10",
       "rating": 1,
       "store": "google_play",
-      "text": "false advertisement, the game developers proclaim that your teammates in this game are real, after careful research with the lawyer we have found out that your…"
+      "text": "I loved this game for the first 100 levels. even shared it with friends. On level 196, it refused to let me pass until I paid for something. so I did and moved…"
      },
-     {
-      "date": "2026-11-08",
-      "rating": 1,
-      "store": "google_play",
-      "text": "not like the ads everything is different"
-     }
-    ],
-    "money": [
      {
       "date": "2026-11-10",
       "rating": 5,
       "store": "google_play",
       "text": "I love this game for the fact that it doesn't have the ads and you don't have to pay anything for you to play it i love love it it keeps you company you will…"
-     },
-     {
-      "date": "2026-11-09",
-      "rating": 4,
-      "store": "google_play",
-      "text": "Can we please get the option to buy the badges we missed?? I really would like to get couple of badges I missed, I would pay for them pleaseeeeee I'm begging…"
-     },
-     {
-      "date": "2026-11-09",
-      "rating": 4,
-      "store": "google_play",
-      "text": "Great Game, although Am thinking if one buys extra lives, boosters, or power ups using real money and if i intend to exit the game, i think all bought items or…"
      }
     ],
     "difficulty": [
      {
+      "date": "2026-11-10",
+      "rating": 1,
+      "store": "google_play",
+      "text": "I loved this game for the first 100 levels. even shared it with friends. On level 196, it refused to let me pass until I paid for something. so I did and moved…"
+     },
+     {
       "date": "2026-11-09",
-      "rating": 5,
+      "rating": 1,
       "store": "app_store",
-      "text": "May. Unfair now! Games have become far too difficult with fewer moves available to me, yet my husband who is on the same level gets more moves. It is…"
+      "text": "Royal match. You can’t win this is the worst game told me fail twice out of moves twice I’m not of fan of this app do not download games that you can’t win ugh…"
      },
      {
-      "date": "2026-11-08",
-      "rating": 4,
-      "store": "google_play",
-      "text": "Great fun and varried games. I would like to stay on the degree of difficulty I like, rather than getting so difficult games can take 20 goes each, and getting…"
-     },
-     {
-      "date": "2026-11-08",
-      "rating": 2,
-      "store": "google_play",
-      "text": "used to be very addictive and enjoyable now it's just addictive the coins you receive for completing levels has changed used to be 100+ coins for hardest now…"
-     }
-    ],
-    "boring": [
-     {
-      "date": "2026-11-10",
-      "rating": 5,
-      "store": "google_play",
-      "text": "I love this game for the fact that it doesn't have the ads and you don't have to pay anything for you to play it i love love it it keeps you company you will…"
-     },
-     {
-      "date": "2026-11-10",
-      "rating": 5,
-      "store": "google_play",
-      "text": "I love this game, I've been playing it for a couple of years, and it never gets boring. Lots of different challenges and mini games. The best thing of all is…"
-     },
-     {
-      "date": "2026-11-08",
-      "rating": 5,
-      "store": "google_play",
-      "text": "this game take away my boring life"
+      "date": "2026-11-09",
+      "rating": 3,
+      "store": "app_store",
+      "text": "Quickly Losing Internet. The moves are being shortened which makes it difficult to win a level without spending money. We’re also winning a lot less in coins…"
      }
     ],
     "fun": [
      {
       "date": "2026-11-10",
+      "rating": 1,
+      "store": "google_play",
+      "text": "I can't stand that they are constantly looking for money. I enjoy playing but it makes me mad."
+     },
+     {
+      "date": "2026-11-10",
+      "rating": 1,
+      "store": "google_play",
+      "text": "I loved this game for the first 100 levels. even shared it with friends. On level 196, it refused to let me pass until I paid for something. so I did and moved…"
+     },
+     {
+      "date": "2026-11-10",
       "rating": 5,
       "store": "google_play",
       "text": "it's a great game. people love playing it!"
-     },
-     {
-      "date": "2026-11-10",
-      "rating": 5,
-      "store": "google_play",
-      "text": "I love this game for the fact that it doesn't have the ads and you don't have to pay anything for you to play it i love love it it keeps you company you will…"
-     },
-     {
-      "date": "2026-11-10",
-      "rating": 5,
-      "store": "google_play",
-      "text": "I love this game, I've been playing it for a couple of years, and it never gets boring. Lots of different challenges and mini games. The best thing of all is…"
      }
     ],
     "relaxing": [
+     {
+      "date": "2026-11-09",
+      "rating": 5,
+      "store": "app_store",
+      "text": "Relaxing competition. Enjoy the day with your friend today…"
+     },
      {
       "date": "2026-11-09",
       "rating": 5,
@@ -480,14 +426,8 @@
      {
       "date": "2026-11-08",
       "rating": 5,
-      "store": "google_play",
-      "text": "amazing game exciting perfect for relaxing, and entertainment. time killer to those delayed flight 😂🥰"
-     },
-     {
-      "date": "2026-11-08",
-      "rating": 5,
-      "store": "google_play",
-      "text": "love this game I release stress"
+      "store": "app_store",
+      "text": "Great. It is a great game to play it takes skill but is really good because it helps to keep your brain working"
      }
     ],
     "no_ads": [
@@ -510,7 +450,73 @@
       "text": "There IS no ads holy ❤️‍🩹🥹"
      }
     ],
+    "ad_mismatch": [
+     {
+      "date": "2026-11-10",
+      "rating": 1,
+      "store": "google_play",
+      "text": "not like the ads,stop lying about the game,it's pathetic"
+     },
+     {
+      "date": "2026-11-10",
+      "rating": 1,
+      "store": "google_play",
+      "text": "SAME AS ROYAL KINGDOM BUT THIS OLD MAN FREAKING LIES TO YOU IN THE ADS THEY LIKE OH THIS GAME LIKE THE ADS NOPE FAKE NEVER DOWNLOAD AND PLEASE UNINSTALL IF…"
+     },
+     {
+      "date": "2026-11-09",
+      "rating": 1,
+      "store": "google_play",
+      "text": "DS is fake 🤬🤬🤬🤬 the actual game is nothing like the ads🤬🤬🤬it's Bull shittyt🤬🤬🤬🤬"
+     }
+    ],
+    "save_king": [
+     {
+      "date": "2026-11-08",
+      "rating": 4,
+      "store": "google_play",
+      "text": "Great fun and varried games. I would like to stay on the degree of difficulty I like, rather than getting so difficult games can take 20 goes each, and getting…"
+     },
+     {
+      "date": "2026-11-08",
+      "rating": 4,
+      "store": "google_play",
+      "text": "it's good though the way they attracted me to the game isn't what happens, thought I will be saving the king everytime I play , but it only comes as the king's…"
+     },
+     {
+      "date": "2026-11-08",
+      "rating": 1,
+      "store": "google_play",
+      "text": "• \"Fake ads, completely different gameplay!,Don't download if you want to play the rescue levels shown in ads.\""
+     }
+    ],
+    "boring": [
+     {
+      "date": "2026-11-10",
+      "rating": 5,
+      "store": "google_play",
+      "text": "I love this game for the fact that it doesn't have the ads and you don't have to pay anything for you to play it i love love it it keeps you company you will…"
+     },
+     {
+      "date": "2026-11-10",
+      "rating": 5,
+      "store": "google_play",
+      "text": "I love this game, I've been playing it for a couple of years, and it never gets boring. Lots of different challenges and mini games. The best thing of all is…"
+     },
+     {
+      "date": "2026-11-09",
+      "rating": 1,
+      "store": "app_store",
+      "text": "Nothing like the ads. The game you download is nothing like what is shown in the ads. It’s just another boring match game. Zero stars"
+     }
+    ],
     "bugs": [
+     {
+      "date": "2026-11-07",
+      "rating": 2,
+      "store": "app_store",
+      "text": "Royal match suggestion. I spent money to play the game and never received some of my coins. I have submitted the request to have customer service look into it…"
+     },
      {
       "date": "2026-11-07",
       "rating": 5,
@@ -522,32 +528,26 @@
       "rating": 1,
       "store": "google_play",
       "text": "the game just won't work. I updated it and the game freezes and it stays there."
-     },
-     {
-      "date": "2026-10-30",
-      "rating": 5,
-      "store": "app_store",
-      "text": "⭐️⭐️FABULOUS⭐️⭐️. I love this game SO much! Since it has absolutely NO ADDS this is my favourite game for when I’m bored or on a long road trip! You can make…"
      }
     ],
     "story_building": [
      {
-      "date": "2026-11-10",
-      "rating": 1,
-      "store": "google_play",
-      "text": "SAME AS ROYAL KINGDOM BUT THIS OLD MAN FREAKING LIES TO YOU IN THE ADS THEY LIKE OH THIS GAME LIKE THE ADS NOPE FAKE NEVER DOWNLOAD AND PLEASE UNINSTALL IF…"
+      "date": "2026-10-27",
+      "rating": 5,
+      "store": "app_store",
+      "text": "👑 A Fun and Addictive Puzzle Game! 💗. ⭐⭐⭐⭐⭐ Royal Match is such a fun and addictive game! I love solving the puzzles, unlocking new areas, and decorating the…"
      },
      {
-      "date": "2026-11-08",
+      "date": "2026-10-24",
       "rating": 1,
-      "store": "google_play",
-      "text": "false advertisement, the game developers proclaim that your teammates in this game are real, after careful research with the lawyer we have found out that your…"
+      "store": "app_store",
+      "text": "Pay to win eventually. I’m shocked no one has sued this game yet honestly. Free to play, but pay to advance. Let’s you win when it wants you to and won’t let…"
      },
      {
-      "date": "2026-11-08",
-      "rating": 2,
-      "store": "google_play",
-      "text": "used to be very addictive and enjoyable now it's just addictive the coins you receive for completing levels has changed used to be 100+ coins for hardest now…"
+      "date": "2026-10-23",
+      "rating": 5,
+      "store": "app_store",
+      "text": "6 Plus. Omg, I’ve been playing this game for more than 6 years. I just love it. Nothing has changed. I’ve seen prices to buy stuff from other games skyrocket…"
      }
     ]
    }
@@ -557,47 +557,47 @@
    "name": "Royal Kingdom",
    "studio": "Dream Games",
    "n": 2500,
-   "n_neg": 1181,
-   "n_pos": 1127,
+   "n_neg": 1183,
+   "n_pos": 1126,
    "avg_rating": 3.0,
    "by_store": {
     "app_store": 2000,
     "google_play": 500
    },
    "neg": {
-    "ad_mismatch": 19.3,
-    "save_king": 9.5,
-    "money": 18.8,
-    "difficulty": 8.0,
-    "boring": 8.6,
+    "ad_mismatch": 34.4,
+    "save_king": 9.4,
+    "money": 20.7,
+    "difficulty": 9.9,
+    "boring": 8.4,
     "bugs": 1.4
    },
    "pos": {
-    "fun": 46.2,
-    "relaxing": 5.3,
+    "fun": 57.0,
+    "relaxing": 4.4,
     "no_ads": 7.5,
-    "story_building": 10.7
+    "story_building": 1.3
    },
    "monthly": [
     {
      "month": "2025-12",
-     "n": 81,
-     "n_neg": 48,
-     "n_pos": 27,
-     "avg_rating": 2.46,
+     "n": 79,
+     "n_neg": 47,
+     "n_pos": 26,
+     "avg_rating": 2.44,
      "neg": {
-      "ad_mismatch": 18.8,
-      "save_king": 4.2,
-      "money": 20.8,
-      "difficulty": 4.2,
-      "boring": 12.5,
+      "ad_mismatch": 29.8,
+      "save_king": 4.3,
+      "money": 19.1,
+      "difficulty": 6.4,
+      "boring": 12.8,
       "bugs": 2.1
      },
      "pos": {
-      "fun": 37.0,
-      "relaxing": 3.7,
-      "no_ads": 14.8,
-      "story_building": 14.8
+      "fun": 42.3,
+      "relaxing": 0.0,
+      "no_ads": 15.4,
+      "story_building": 3.8
      }
     },
     {
@@ -607,18 +607,18 @@
      "n_pos": 26,
      "avg_rating": 2.05,
      "neg": {
-      "ad_mismatch": 24.4,
+      "ad_mismatch": 42.2,
       "save_king": 4.4,
       "money": 12.2,
-      "difficulty": 7.8,
+      "difficulty": 8.9,
       "boring": 8.9,
       "bugs": 0.0
      },
      "pos": {
-      "fun": 53.8,
-      "relaxing": 3.8,
+      "fun": 73.1,
+      "relaxing": 0.0,
       "no_ads": 7.7,
-      "story_building": 11.5
+      "story_building": 0.0
      }
     },
     {
@@ -628,18 +628,18 @@
      "n_pos": 25,
      "avg_rating": 2.25,
      "neg": {
-      "ad_mismatch": 22.4,
+      "ad_mismatch": 38.8,
       "save_king": 11.9,
-      "money": 10.4,
-      "difficulty": 3.0,
+      "money": 11.9,
+      "difficulty": 6.0,
       "boring": 10.4,
       "bugs": 0.0
      },
      "pos": {
-      "fun": 60.0,
-      "relaxing": 16.0,
+      "fun": 76.0,
+      "relaxing": 12.0,
       "no_ads": 12.0,
-      "story_building": 28.0
+      "story_building": 4.0
      }
     },
     {
@@ -649,18 +649,18 @@
      "n_pos": 24,
      "avg_rating": 2.12,
      "neg": {
-      "ad_mismatch": 21.4,
+      "ad_mismatch": 39.3,
       "save_king": 13.1,
-      "money": 14.3,
-      "difficulty": 8.3,
+      "money": 15.5,
+      "difficulty": 9.5,
       "boring": 4.8,
       "bugs": 4.8
      },
      "pos": {
-      "fun": 62.5,
+      "fun": 70.8,
       "relaxing": 8.3,
       "no_ads": 8.3,
-      "story_building": 29.2
+      "story_building": 0.0
      }
     },
     {
@@ -670,18 +670,18 @@
      "n_pos": 24,
      "avg_rating": 2.0,
      "neg": {
-      "ad_mismatch": 35.5,
+      "ad_mismatch": 48.6,
       "save_king": 13.1,
-      "money": 12.1,
+      "money": 14.0,
       "difficulty": 0.9,
       "boring": 11.2,
       "bugs": 0.9
      },
      "pos": {
-      "fun": 66.7,
+      "fun": 70.8,
       "relaxing": 16.7,
       "no_ads": 8.3,
-      "story_building": 16.7
+      "story_building": 4.2
      }
     },
     {
@@ -691,18 +691,18 @@
      "n_pos": 37,
      "avg_rating": 2.52,
      "neg": {
-      "ad_mismatch": 19.1,
+      "ad_mismatch": 22.1,
       "save_king": 5.9,
-      "money": 17.6,
+      "money": 23.5,
       "difficulty": 10.3,
       "boring": 5.9,
       "bugs": 1.5
      },
      "pos": {
-      "fun": 54.1,
-      "relaxing": 8.1,
+      "fun": 64.9,
+      "relaxing": 5.4,
       "no_ads": 18.9,
-      "story_building": 18.9
+      "story_building": 0.0
      }
     },
     {
@@ -712,28 +712,28 @@
      "n_pos": 31,
      "avg_rating": 2.8,
      "neg": {
-      "ad_mismatch": 12.2,
+      "ad_mismatch": 17.1,
       "save_king": 0.0,
       "money": 22.0,
-      "difficulty": 4.9,
-      "boring": 2.4,
+      "difficulty": 7.3,
+      "boring": 4.9,
       "bugs": 2.4
      },
      "pos": {
-      "fun": 61.3,
+      "fun": 74.2,
       "relaxing": 9.7,
       "no_ads": 9.7,
-      "story_building": 16.1
+      "story_building": 0.0
      }
     },
     {
      "month": "2026-07",
-     "n": 94,
+     "n": 95,
      "n_neg": 51,
-     "n_pos": 34,
-     "avg_rating": 2.7,
+     "n_pos": 35,
+     "avg_rating": 2.73,
      "neg": {
-      "ad_mismatch": 11.8,
+      "ad_mismatch": 27.5,
       "save_king": 7.8,
       "money": 13.7,
       "difficulty": 7.8,
@@ -741,10 +741,10 @@
       "bugs": 0.0
      },
      "pos": {
-      "fun": 44.1,
-      "relaxing": 5.9,
-      "no_ads": 11.8,
-      "story_building": 17.6
+      "fun": 54.3,
+      "relaxing": 5.7,
+      "no_ads": 11.4,
+      "story_building": 5.7
      }
     },
     {
@@ -754,39 +754,39 @@
      "n_pos": 40,
      "avg_rating": 3.19,
      "neg": {
-      "ad_mismatch": 8.6,
+      "ad_mismatch": 31.4,
       "save_king": 2.9,
-      "money": 22.9,
+      "money": 25.7,
       "difficulty": 11.4,
       "boring": 5.7,
       "bugs": 0.0
      },
      "pos": {
-      "fun": 37.5,
-      "relaxing": 5.0,
+      "fun": 52.5,
+      "relaxing": 2.5,
       "no_ads": 10.0,
-      "story_building": 15.0
+      "story_building": 2.5
      }
     },
     {
      "month": "2026-09",
-     "n": 302,
-     "n_neg": 107,
-     "n_pos": 177,
+     "n": 298,
+     "n_neg": 105,
+     "n_pos": 175,
      "avg_rating": 3.49,
      "neg": {
-      "ad_mismatch": 10.3,
-      "save_king": 11.2,
-      "money": 28.0,
-      "difficulty": 12.1,
-      "boring": 3.7,
-      "bugs": 2.8
+      "ad_mismatch": 24.8,
+      "save_king": 10.5,
+      "money": 29.5,
+      "difficulty": 15.2,
+      "boring": 3.8,
+      "bugs": 2.9
      },
      "pos": {
-      "fun": 59.3,
-      "relaxing": 6.2,
+      "fun": 67.4,
+      "relaxing": 5.1,
       "no_ads": 5.1,
-      "story_building": 14.1
+      "story_building": 0.0
      }
     },
     {
@@ -796,43 +796,63 @@
      "n_pos": 143,
      "avg_rating": 2.99,
      "neg": {
-      "ad_mismatch": 10.9,
+      "ad_mismatch": 26.3,
       "save_king": 10.9,
-      "money": 31.4,
-      "difficulty": 12.8,
-      "boring": 6.4,
+      "money": 34.6,
+      "difficulty": 15.4,
+      "boring": 5.8,
       "bugs": 1.3
      },
      "pos": {
-      "fun": 56.6,
-      "relaxing": 3.5,
-      "no_ads": 4.9,
-      "story_building": 9.1
+      "fun": 64.3,
+      "relaxing": 2.1,
+      "no_ads": 5.6,
+      "story_building": 0.7
      }
     },
     {
      "month": "2026-11",
-     "n": 582,
-     "n_neg": 115,
-     "n_pos": 445,
-     "avg_rating": 4.12,
+     "n": 588,
+     "n_neg": 121,
+     "n_pos": 446,
+     "avg_rating": 4.09,
      "neg": {
-      "ad_mismatch": 10.4,
-      "save_king": 8.7,
-      "money": 20.9,
-      "difficulty": 10.4,
-      "boring": 2.6,
-      "bugs": 0.9
+      "ad_mismatch": 21.5,
+      "save_king": 8.3,
+      "money": 25.6,
+      "difficulty": 14.9,
+      "boring": 3.3,
+      "bugs": 0.8
      },
      "pos": {
-      "fun": 32.4,
-      "relaxing": 3.4,
+      "fun": 44.6,
+      "relaxing": 3.6,
       "no_ads": 4.3,
-      "story_building": 4.0
+      "story_building": 1.3
      }
     }
    ],
    "quotes": {
+    "fun": [
+     {
+      "date": "2026-11-10",
+      "rating": 5,
+      "store": "google_play",
+      "text": "a lot of fun, beautiful graphics, easy play and helpful with out forcing you to pay to play. loads of fun for hours"
+     },
+     {
+      "date": "2026-11-10",
+      "rating": 5,
+      "store": "google_play",
+      "text": "Great game, challenging levels and no ads!!"
+     },
+     {
+      "date": "2026-11-10",
+      "rating": 4,
+      "store": "google_play",
+      "text": "Great game to past the time."
+     }
+    ],
     "no_ads": [
      {
       "date": "2026-11-10",
@@ -853,24 +873,44 @@
       "text": "Keeping my 🎮 streak alive. I'm playing this game on my tablet and it is fun. There's no ADS, which means no interruptions. I don't have to put it in Airplane…"
      }
     ],
-    "difficulty": [
+    "money": [
      {
-      "date": "2026-11-09",
+      "date": "2026-11-10",
       "rating": 5,
       "store": "google_play",
-      "text": "its become really difficult for me. I like this game alot but power ups an lives are too hard to get."
+      "text": "a lot of fun, beautiful graphics, easy play and helpful with out forcing you to pay to play. loads of fun for hours"
      },
      {
-      "date": "2026-11-08",
+      "date": "2026-11-09",
       "rating": 1,
-      "store": "google_play",
-      "text": "great ad, game rubbish - 2 levels of saving the king where it does the moves for you if you get stuck, then off in some other unwanted direction. why not make…"
+      "store": "app_store",
+      "text": "Typical Dream Game Model. Easy to start, affordable to buy stuff if needed. But once you start having success the levels get harder (due to them giving you…"
      },
      {
-      "date": "2026-11-08",
-      "rating": 3,
+      "date": "2026-11-09",
+      "rating": 1,
+      "store": "app_store",
+      "text": "Used to be great, but time to move on.. Used to be my favorite game but with the recent update, games are impossible to complete without spending! The main…"
+     }
+    ],
+    "difficulty": [
+     {
+      "date": "2026-11-10",
+      "rating": 2,
       "store": "google_play",
-      "text": "Why can't I seem to find the game just as illustrated in the ad? The ad shows the king stuck but after installing, it's just a normal match game"
+      "text": "They have all these ways to win helps and fun thing , but I seriously have to play ALL DAY just to beat 1 level , Not much fun if you can’t win , I now started…"
+     },
+     {
+      "date": "2026-11-09",
+      "rating": 1,
+      "store": "app_store",
+      "text": "Typical Dream Game Model. Easy to start, affordable to buy stuff if needed. But once you start having success the levels get harder (due to them giving you…"
+     },
+     {
+      "date": "2026-11-09",
+      "rating": 1,
+      "store": "app_store",
+      "text": "Used to be great, but time to move on.. Used to be my favorite game but with the recent update, games are impossible to complete without spending! The main…"
      }
     ],
     "ad_mismatch": [
@@ -878,19 +918,19 @@
       "date": "2026-11-10",
       "rating": 1,
       "store": "google_play",
+      "text": "fake all fake don't download it the add is a ai"
+     },
+     {
+      "date": "2026-11-10",
+      "rating": 1,
+      "store": "google_play",
       "text": "1 star because ad is different game is thesame thing I've been trying to download"
      },
      {
-      "date": "2026-11-08",
-      "rating": 1,
+      "date": "2026-11-10",
+      "rating": 2,
       "store": "google_play",
-      "text": "advertisements are still lying. False advertising should get games banned from the store. \"artistic freedom\" does not mean you can lie about your game to draw…"
-     },
-     {
-      "date": "2026-11-08",
-      "rating": 1,
-      "store": "google_play",
-      "text": "not the same as the ads it is a regular match game like candy crush and other games like that, the ad is very misleading and grossly over state you suggested…"
+      "text": "it can be fun but it is NOTHING like the ads."
      }
     ],
     "save_king": [
@@ -911,26 +951,6 @@
       "rating": 5,
       "store": "google_play",
       "text": "I like it more like Royal match but saving the king should be there"
-     }
-    ],
-    "fun": [
-     {
-      "date": "2026-11-10",
-      "rating": 5,
-      "store": "google_play",
-      "text": "a lot of fun, beautiful graphics, easy play and helpful with out forcing you to pay to play. loads of fun for hours"
-     },
-     {
-      "date": "2026-11-10",
-      "rating": 5,
-      "store": "google_play",
-      "text": "Great game, challenging levels and no ads!!"
-     },
-     {
-      "date": "2026-11-10",
-      "rating": 4,
-      "store": "google_play",
-      "text": "Great game to past the time."
      }
     ],
     "relaxing": [
@@ -956,41 +976,41 @@
     "boring": [
      {
       "date": "2026-11-09",
+      "rating": 1,
+      "store": "app_store",
+      "text": "Scam, bait and switch?. This is one of those games you hear about where what is advertised in the demo is totally different than what appears when you play it.…"
+     },
+     {
+      "date": "2026-11-09",
       "rating": 4,
       "store": "google_play",
       "text": "You can play when you're bored."
      },
      {
-      "date": "2026-11-08",
-      "rating": 3,
+      "date": "2026-11-09",
+      "rating": 2,
+      "store": "app_store",
+      "text": "Not as advertised. The Kingdom levels are not the games that are advertised. It’s basically just shooting things. Really boring."
+     }
+    ],
+    "bugs": [
+     {
+      "date": "2026-11-09",
+      "rating": 5,
       "store": "google_play",
-      "text": "ok not bad but gets boring."
+      "text": "I'm addicted. it's never glitchy"
      },
      {
       "date": "2026-11-06",
+      "rating": 1,
+      "store": "app_store",
+      "text": "Gameplay. I have the same problem with this game as your Royal Match game…… it makes different moves than where I direct ! Getting so sick of these plays…"
+     },
+     {
+      "date": "2026-10-30",
       "rating": 5,
       "store": "app_store",
-      "text": "Excellent. What a sweetest game you can’t be boring with🥷😎"
-     }
-    ],
-    "money": [
-     {
-      "date": "2026-11-10",
-      "rating": 5,
-      "store": "google_play",
-      "text": "a lot of fun, beautiful graphics, easy play and helpful with out forcing you to pay to play. loads of fun for hours"
-     },
-     {
-      "date": "2026-11-09",
-      "rating": 1,
-      "store": "google_play",
-      "text": "Way to hard for a game that doesn't even let you watch ads for a boost to beat a level. Designed to make you pay to win."
-     },
-     {
-      "date": "2026-11-09",
-      "rating": 5,
-      "store": "google_play",
-      "text": "it's a huge money suck, but I'm addicted. love the game."
+      "text": "So good!!. I love this game so much!! And I’m not lying because I feel bad about leaving bad reviews, this game is so good! This game works offline, NO ADS and…"
      }
     ],
     "story_building": [
@@ -1008,29 +1028,9 @@
      },
      {
       "date": "2026-11-08",
-      "rating": 1,
-      "store": "app_store",
-      "text": "Not Free and Not Fun Anymore. I used to play a game similar to this one, and initially Royal Kingdom was a fun alternative. The further you get into the levels…"
-     }
-    ],
-    "bugs": [
-     {
-      "date": "2026-11-09",
       "rating": 5,
       "store": "google_play",
-      "text": "I'm addicted. it's never glitchy"
-     },
-     {
-      "date": "2026-11-06",
-      "rating": 1,
-      "store": "app_store",
-      "text": "Gameplay. I have the same problem with this game as your Royal Match game…… it makes different moves than where I direct ! Getting so sick of these plays…"
-     },
-     {
-      "date": "2026-10-26",
-      "rating": 2,
-      "store": "app_store",
-      "text": "Level 78 bug. Crashes over and over at level 78 when I hit start. Can’t play this anymore now. Deleted."
+      "text": "it's amazing the puzzles are with hard what is the storyline saw was amazing i like this a 100 out of 100"
      }
     ]
    }
@@ -1039,27 +1039,27 @@
    "key": "candy_crush",
    "name": "Candy Crush Saga",
    "studio": "King",
-   "n": 2050,
-   "n_neg": 856,
-   "n_pos": 991,
-   "avg_rating": 3.14,
+   "n": 2500,
+   "n_neg": 1061,
+   "n_pos": 1205,
+   "avg_rating": 3.13,
    "by_store": {
-    "app_store": 1550,
+    "app_store": 2000,
     "google_play": 500
    },
    "neg": {
-    "ad_mismatch": 1.6,
+    "ad_mismatch": 1.3,
     "save_king": 0.1,
-    "money": 25.1,
-    "difficulty": 17.2,
-    "boring": 4.6,
-    "bugs": 20.0
+    "money": 29.9,
+    "difficulty": 20.4,
+    "boring": 4.4,
+    "bugs": 18.1
    },
    "pos": {
-    "fun": 44.6,
-    "relaxing": 7.5,
+    "fun": 53.9,
+    "relaxing": 7.1,
     "no_ads": 2.4,
-    "story_building": 0.4
+    "story_building": 0.1
    },
    "monthly": [
     {
@@ -1071,14 +1071,14 @@
      "neg": {
       "ad_mismatch": 2.9,
       "save_king": 0.0,
-      "money": 25.7,
-      "difficulty": 17.1,
+      "money": 31.4,
+      "difficulty": 20.0,
       "boring": 2.9,
       "bugs": 22.9
      },
      "pos": {
       "fun": 75.8,
-      "relaxing": 6.1,
+      "relaxing": 3.0,
       "no_ads": 6.1,
       "story_building": 0.0
      }
@@ -1092,13 +1092,13 @@
      "neg": {
       "ad_mismatch": 2.0,
       "save_king": 0.0,
-      "money": 36.0,
-      "difficulty": 30.0,
+      "money": 44.0,
+      "difficulty": 32.0,
       "boring": 8.0,
-      "bugs": 12.0
+      "bugs": 14.0
      },
      "pos": {
-      "fun": 58.1,
+      "fun": 71.0,
       "relaxing": 9.7,
       "no_ads": 3.2,
       "story_building": 0.0
@@ -1113,16 +1113,16 @@
      "neg": {
       "ad_mismatch": 3.2,
       "save_king": 0.0,
-      "money": 28.6,
-      "difficulty": 14.3,
+      "money": 33.3,
+      "difficulty": 19.0,
       "boring": 4.8,
-      "bugs": 15.9
+      "bugs": 17.5
      },
      "pos": {
-      "fun": 60.6,
+      "fun": 63.6,
       "relaxing": 6.1,
       "no_ads": 3.0,
-      "story_building": 6.1
+      "story_building": 3.0
      }
     },
     {
@@ -1134,13 +1134,13 @@
      "neg": {
       "ad_mismatch": 2.9,
       "save_king": 0.0,
-      "money": 25.7,
-      "difficulty": 22.9,
+      "money": 28.6,
+      "difficulty": 28.6,
       "boring": 2.9,
       "bugs": 34.3
      },
      "pos": {
-      "fun": 55.0,
+      "fun": 70.0,
       "relaxing": 15.0,
       "no_ads": 5.0,
       "story_building": 0.0
@@ -1153,10 +1153,10 @@
      "n_pos": 23,
      "avg_rating": 2.36,
      "neg": {
-      "ad_mismatch": 2.3,
+      "ad_mismatch": 0.0,
       "save_king": 0.0,
-      "money": 18.2,
-      "difficulty": 22.7,
+      "money": 22.7,
+      "difficulty": 27.3,
       "boring": 0.0,
       "bugs": 45.5
      },
@@ -1176,13 +1176,13 @@
      "neg": {
       "ad_mismatch": 0.0,
       "save_king": 0.0,
-      "money": 29.8,
-      "difficulty": 21.3,
+      "money": 34.0,
+      "difficulty": 23.4,
       "boring": 2.1,
-      "bugs": 40.4
+      "bugs": 42.6
      },
      "pos": {
-      "fun": 52.6,
+      "fun": 63.2,
       "relaxing": 18.4,
       "no_ads": 0.0,
       "story_building": 0.0
@@ -1197,14 +1197,14 @@
      "neg": {
       "ad_mismatch": 0.0,
       "save_king": 0.0,
-      "money": 22.9,
+      "money": 25.0,
       "difficulty": 18.8,
       "boring": 2.1,
-      "bugs": 25.0
+      "bugs": 27.1
      },
      "pos": {
       "fun": 64.3,
-      "relaxing": 10.7,
+      "relaxing": 3.6,
       "no_ads": 0.0,
       "story_building": 0.0
      }
@@ -1218,13 +1218,13 @@
      "neg": {
       "ad_mismatch": 1.9,
       "save_king": 0.0,
-      "money": 30.2,
+      "money": 34.0,
       "difficulty": 17.0,
       "boring": 7.5,
-      "bugs": 26.4
+      "bugs": 28.3
      },
      "pos": {
-      "fun": 56.8,
+      "fun": 70.3,
       "relaxing": 13.5,
       "no_ads": 2.7,
       "story_building": 0.0
@@ -1245,71 +1245,71 @@
       "bugs": 20.6
      },
      "pos": {
-      "fun": 51.2,
+      "fun": 55.8,
       "relaxing": 9.3,
       "no_ads": 2.3,
-      "story_building": 2.3
+      "story_building": 0.0
      }
     },
     {
      "month": "2026-09",
-     "n": 55,
-     "n_neg": 27,
-     "n_pos": 24,
-     "avg_rating": 2.98,
+     "n": 242,
+     "n_neg": 119,
+     "n_pos": 105,
+     "avg_rating": 2.95,
      "neg": {
       "ad_mismatch": 0.0,
       "save_king": 0.0,
-      "money": 40.7,
-      "difficulty": 18.5,
-      "boring": 3.7,
-      "bugs": 11.1
+      "money": 41.2,
+      "difficulty": 22.7,
+      "boring": 5.0,
+      "bugs": 9.2
      },
      "pos": {
-      "fun": 33.3,
-      "relaxing": 20.8,
-      "no_ads": 0.0,
+      "fun": 48.6,
+      "relaxing": 12.4,
+      "no_ads": 1.9,
       "story_building": 0.0
      }
     },
     {
      "month": "2026-10",
-     "n": 73,
-     "n_neg": 35,
-     "n_pos": 32,
-     "avg_rating": 3.0,
+     "n": 316,
+     "n_neg": 137,
+     "n_pos": 157,
+     "avg_rating": 3.16,
      "neg": {
-      "ad_mismatch": 2.9,
+      "ad_mismatch": 0.7,
       "save_king": 0.0,
-      "money": 22.9,
-      "difficulty": 17.1,
-      "boring": 11.4,
-      "bugs": 11.4
+      "money": 27.0,
+      "difficulty": 22.6,
+      "boring": 5.1,
+      "bugs": 7.3
      },
      "pos": {
-      "fun": 53.1,
-      "relaxing": 6.2,
-      "no_ads": 3.1,
+      "fun": 60.5,
+      "relaxing": 9.6,
+      "no_ads": 2.5,
       "story_building": 0.0
      }
     },
     {
      "month": "2026-11",
-     "n": 575,
-     "n_neg": 86,
-     "n_pos": 457,
-     "avg_rating": 4.24,
+     "n": 597,
+     "n_neg": 97,
+     "n_pos": 465,
+     "avg_rating": 4.18,
      "neg": {
-      "ad_mismatch": 0.0,
-      "save_king": 1.2,
-      "money": 16.3,
-      "difficulty": 11.6,
-      "boring": 2.3,
-      "bugs": 5.8
+      "ad_mismatch": 1.0,
+      "save_king": 1.0,
+      "money": 16.5,
+      "difficulty": 13.4,
+      "boring": 2.1,
+      "bugs": 5.2
      },
      "pos": {
-      "fun": 32.4,
-      "relaxing": 4.2,
+      "fun": 42.2,
+      "relaxing": 3.4,
       "no_ads": 1.5,
       "story_building": 0.0
      }
@@ -1325,38 +1325,24 @@
      },
      {
       "date": "2026-11-09",
-      "rating": 1,
-      "store": "google_play",
-      "text": "A Monotonous, boring frustrating, game, stuck on levels purposely to get you to spend money no fun at all"
-     },
-     {
-      "date": "2026-11-09",
-      "rating": 4,
-      "store": "google_play",
-      "text": "The game is very nice and it challenges your brain it is a nice way to spend your leisure time"
-     }
-    ],
-    "boring": [
-     {
-      "date": "2026-11-09",
-      "rating": 1,
-      "store": "google_play",
-      "text": "A Monotonous, boring frustrating, game, stuck on levels purposely to get you to spend money no fun at all"
-     },
-     {
-      "date": "2026-10-27",
-      "rating": 1,
-      "store": "app_store",
-      "text": "Bad. It’s boring it’s too easy"
-     },
-     {
-      "date": "2026-10-26",
       "rating": 2,
-      "store": "app_store",
-      "text": "Boring. All 5 lives, gave me an extra one…then another 5…all on one level that wasn’t even supposed to be one of the hard ones 😂 literally opened the app,…"
+      "store": "google_play",
+      "text": "I used my play points, 500, for a $10 coupon and it NEVER SHOWED UP. Plus, the pop-ups in the game are ridiculous."
+     },
+     {
+      "date": "2026-11-09",
+      "rating": 1,
+      "store": "google_play",
+      "text": "A Monotonous, boring frustrating, game, stuck on levels purposely to get you to spend money no fun at all"
      }
     ],
     "fun": [
+     {
+      "date": "2026-11-10",
+      "rating": 5,
+      "store": "google_play",
+      "text": "awesome fun...very addictive"
+     },
      {
       "date": "2026-11-10",
       "rating": 5,
@@ -1367,13 +1353,7 @@
       "date": "2026-11-10",
       "rating": 5,
       "store": "google_play",
-      "text": "Fun way to pass the time. It keeps my adhd in check for a bit. If I can stay seated, it wins.. So far, so good"
-     },
-     {
-      "date": "2026-11-10",
-      "rating": 5,
-      "store": "google_play",
-      "text": "I love this game. I really enjoy the game. Thank you, Candy Crush teams."
+      "text": "this game is amazing more challenging that make your brain alive. Also there's a one or 3 move are very defecult for me. it's ok atles I pas all off them."
      }
     ],
     "difficulty": [
@@ -1394,6 +1374,26 @@
       "rating": 1,
       "store": "google_play",
       "text": "Overnight it has become an advert invested nightmare. Started off as a 10-15sec ad to get a continuance, extra life etc then overnight the ads changed to 30…"
+     }
+    ],
+    "boring": [
+     {
+      "date": "2026-11-09",
+      "rating": 1,
+      "store": "google_play",
+      "text": "A Monotonous, boring frustrating, game, stuck on levels purposely to get you to spend money no fun at all"
+     },
+     {
+      "date": "2026-11-02",
+      "rating": 5,
+      "store": "app_store",
+      "text": "Best game. Candy crush has always been there for me when I was bored but I stoped for eight years now am sixteen still playing on level309 I really hope king…"
+     },
+     {
+      "date": "2026-10-30",
+      "rating": 1,
+      "store": "app_store",
+      "text": "Pay To Peogress. The game itself is fun but it becomes really obvious they stack the game to push you to spend money to progress. It gets really boring really…"
      }
     ],
     "bugs": [
@@ -1418,6 +1418,12 @@
     ],
     "no_ads": [
      {
+      "date": "2026-11-09",
+      "rating": 3,
+      "store": "app_store",
+      "text": "Descent. It’s a good game , but it’s getting to the point where they’re adding too many pop ups to where I can’t even enjoy it without being offline."
+     },
+     {
       "date": "2026-11-08",
       "rating": 5,
       "store": "google_play",
@@ -1428,12 +1434,6 @@
       "rating": 5,
       "store": "google_play",
       "text": "this game is so good no ads and you can actually play it without WiFi"
-     },
-     {
-      "date": "2026-11-08",
-      "rating": 5,
-      "store": "google_play",
-      "text": "it is a great game. I have installed a lot of games but this is one of them. there is no ads."
      }
     ],
     "relaxing": [
@@ -1444,10 +1444,10 @@
       "text": "this game is amazing more challenging that make your brain alive. Also there's a one or 3 move are very defecult for me. it's ok atles I pas all off them."
      },
      {
-      "date": "2026-11-09",
+      "date": "2026-11-10",
       "rating": 5,
       "store": "google_play",
-      "text": "excellent 👌 stress killer 😘"
+      "text": "Fun way to pass the time. It keeps my adhd in check for a bit. If I can stay seated, it wins.. So far, so good"
      },
      {
       "date": "2026-11-09",
@@ -1456,44 +1456,38 @@
       "text": "I enjoy playing this game it helps me to unwind"
      }
     ],
-    "story_building": [
-     {
-      "date": "2026-11-06",
-      "rating": 1,
-      "store": "app_store",
-      "text": "Ads. STOP SHOWING ADS ON OTHERS GAMES WHERE SOME IDIOT KEEPS KILLING CHARACTERS!!!!"
-     },
-     {
-      "date": "2026-11-01",
-      "rating": 2,
-      "store": "app_store",
-      "text": "Fixed levels and money-grabbing tactics. It’s impossible to complete the ‘rescue the character’ levels without using gold bars for more moves. I went to use…"
-     },
-     {
-      "date": "2026-08-06",
-      "rating": 5,
-      "store": "app_store",
-      "text": "MAGNIFICENT. This game is AMAZING it makes you focus have fun and gives you free rewards. If you delete or stop playing the game for a WHILE your character…"
-     }
-    ],
     "ad_mismatch": [
      {
-      "date": "2026-10-28",
+      "date": "2026-11-09",
       "rating": 1,
       "store": "app_store",
-      "text": "Adds. Terrible policies in this game. Everytime you fail it makes sure you see a pile of desirable pieces but your game is over. Drops all this on when you…"
+      "text": "Scam & Disinformation Ads. I have enjoyed this game for several years, but it has started pushing out political disinformation ads with highly misleading…"
      },
      {
-      "date": "2026-07-26",
+      "date": "2026-10-19",
       "rating": 1,
       "store": "app_store",
-      "text": "Not as described. False advertising as the game is nothing like what is shown on the preview!"
+      "text": "Long annoying stupid adds are getting ready to start. Adds are way too long have to watch several long adds for just a few extra moves , totally a rip off , no…"
      },
      {
-      "date": "2026-06-24",
+      "date": "2026-10-19",
       "rating": 4,
       "store": "app_store",
-      "text": "Too many Ai generated fake ads.. Many of these are for weight loss patches which do NOT work. Boots is frequently shown using Ai generated videos. They.spoil…"
+      "text": "Spoiled by inappropriate ads. I have just started getting ads purporting to be from Boots and Marks and Spencer’s but when you click on them they take you to…"
+     }
+    ],
+    "story_building": [
+     {
+      "date": "2026-09-15",
+      "rating": 1,
+      "store": "app_store",
+      "text": "New Version is Terrible. They removed the original music, story, characters, original sounds, everything that made the game fun and unique."
+     },
+     {
+      "date": "2026-02-19",
+      "rating": 5,
+      "store": "app_store",
+      "text": "Candy Crush Saga IS AMAZING!!!. Pls download I mean, you don’t have to, or need to you can if you watch any advertisements or if you’re fine with getting rid…"
      }
     ],
     "save_king": [
@@ -1511,47 +1505,47 @@
    "name": "Homescapes",
    "studio": "Playrix",
    "n": 2500,
-   "n_neg": 1032,
-   "n_pos": 1249,
+   "n_neg": 1033,
+   "n_pos": 1247,
    "avg_rating": 3.16,
    "by_store": {
     "app_store": 2000,
     "google_play": 500
    },
    "neg": {
-    "ad_mismatch": 9.2,
+    "ad_mismatch": 14.0,
     "save_king": 0.0,
-    "money": 27.0,
-    "difficulty": 18.1,
-    "boring": 6.2,
-    "bugs": 5.3
+    "money": 29.4,
+    "difficulty": 22.2,
+    "boring": 6.3,
+    "bugs": 6.2
    },
    "pos": {
-    "fun": 51.0,
-    "relaxing": 5.6,
+    "fun": 60.5,
+    "relaxing": 4.8,
     "no_ads": 5.6,
-    "story_building": 6.8
+    "story_building": 3.8
    },
    "monthly": [
     {
      "month": "2025-12",
-     "n": 113,
+     "n": 112,
      "n_neg": 46,
-     "n_pos": 54,
-     "avg_rating": 3.14,
+     "n_pos": 53,
+     "avg_rating": 3.13,
      "neg": {
-      "ad_mismatch": 10.9,
+      "ad_mismatch": 17.4,
       "save_king": 0.0,
       "money": 28.3,
-      "difficulty": 10.9,
+      "difficulty": 17.4,
       "boring": 6.5,
       "bugs": 13.0
      },
      "pos": {
-      "fun": 59.3,
-      "relaxing": 5.6,
-      "no_ads": 3.7,
-      "story_building": 3.7
+      "fun": 71.7,
+      "relaxing": 5.7,
+      "no_ads": 3.8,
+      "story_building": 1.9
      }
     },
     {
@@ -1561,18 +1555,18 @@
      "n_pos": 58,
      "avg_rating": 2.84,
      "neg": {
-      "ad_mismatch": 14.7,
+      "ad_mismatch": 27.9,
       "save_king": 0.0,
       "money": 33.8,
-      "difficulty": 22.1,
+      "difficulty": 26.5,
       "boring": 2.9,
       "bugs": 1.5
      },
      "pos": {
-      "fun": 63.8,
-      "relaxing": 6.9,
+      "fun": 74.1,
+      "relaxing": 5.2,
       "no_ads": 8.6,
-      "story_building": 1.7
+      "story_building": 0.0
      }
     },
     {
@@ -1582,18 +1576,18 @@
      "n_pos": 27,
      "avg_rating": 3.2,
      "neg": {
-      "ad_mismatch": 14.3,
+      "ad_mismatch": 19.0,
       "save_king": 0.0,
-      "money": 23.8,
-      "difficulty": 9.5,
+      "money": 28.6,
+      "difficulty": 28.6,
       "boring": 9.5,
       "bugs": 4.8
      },
      "pos": {
-      "fun": 63.0,
-      "relaxing": 14.8,
+      "fun": 70.4,
+      "relaxing": 22.2,
       "no_ads": 14.8,
-      "story_building": 7.4
+      "story_building": 0.0
      }
     },
     {
@@ -1603,18 +1597,18 @@
      "n_pos": 41,
      "avg_rating": 3.24,
      "neg": {
-      "ad_mismatch": 23.5,
+      "ad_mismatch": 29.4,
       "save_king": 0.0,
       "money": 23.5,
-      "difficulty": 14.7,
+      "difficulty": 17.6,
       "boring": 8.8,
-      "bugs": 8.8
+      "bugs": 11.8
      },
      "pos": {
-      "fun": 56.1,
-      "relaxing": 7.3,
+      "fun": 70.7,
+      "relaxing": 4.9,
       "no_ads": 2.4,
-      "story_building": 4.9
+      "story_building": 0.0
      }
     },
     {
@@ -1624,18 +1618,18 @@
      "n_pos": 50,
      "avg_rating": 3.56,
      "neg": {
-      "ad_mismatch": 15.4,
+      "ad_mismatch": 23.1,
       "save_king": 0.0,
       "money": 23.1,
-      "difficulty": 19.2,
+      "difficulty": 23.1,
       "boring": 3.8,
       "bugs": 7.7
      },
      "pos": {
-      "fun": 58.0,
+      "fun": 70.0,
       "relaxing": 4.0,
       "no_ads": 6.0,
-      "story_building": 12.0
+      "story_building": 10.0
      }
     },
     {
@@ -1647,16 +1641,16 @@
      "neg": {
       "ad_mismatch": 4.0,
       "save_king": 0.0,
-      "money": 36.0,
-      "difficulty": 32.0,
+      "money": 40.0,
+      "difficulty": 44.0,
       "boring": 12.0,
       "bugs": 0.0
      },
      "pos": {
-      "fun": 65.5,
-      "relaxing": 10.3,
+      "fun": 72.4,
+      "relaxing": 6.9,
       "no_ads": 0.0,
-      "story_building": 3.4
+      "story_building": 0.0
      }
     },
     {
@@ -1669,36 +1663,36 @@
       "ad_mismatch": 2.9,
       "save_king": 0.0,
       "money": 29.4,
-      "difficulty": 17.6,
+      "difficulty": 20.6,
       "boring": 2.9,
-      "bugs": 2.9
+      "bugs": 8.8
      },
      "pos": {
-      "fun": 71.4,
+      "fun": 76.2,
       "relaxing": 0.0,
       "no_ads": 9.5,
-      "story_building": 23.8
+      "story_building": 19.0
      }
     },
     {
      "month": "2026-07",
-     "n": 210,
-     "n_neg": 108,
-     "n_pos": 89,
-     "avg_rating": 2.82,
+     "n": 205,
+     "n_neg": 105,
+     "n_pos": 87,
+     "avg_rating": 2.83,
      "neg": {
-      "ad_mismatch": 7.4,
+      "ad_mismatch": 7.6,
       "save_king": 0.0,
-      "money": 23.1,
-      "difficulty": 12.0,
-      "boring": 3.7,
-      "bugs": 6.5
+      "money": 24.8,
+      "difficulty": 13.3,
+      "boring": 3.8,
+      "bugs": 6.7
      },
      "pos": {
-      "fun": 49.4,
-      "relaxing": 7.9,
-      "no_ads": 6.7,
-      "story_building": 10.1
+      "fun": 58.6,
+      "relaxing": 8.0,
+      "no_ads": 6.9,
+      "story_building": 4.6
      }
     },
     {
@@ -1708,18 +1702,18 @@
      "n_pos": 64,
      "avg_rating": 2.81,
      "neg": {
-      "ad_mismatch": 1.3,
+      "ad_mismatch": 3.8,
       "save_king": 0.0,
-      "money": 28.2,
+      "money": 29.5,
       "difficulty": 16.7,
       "boring": 7.7,
-      "bugs": 10.3
+      "bugs": 11.5
      },
      "pos": {
-      "fun": 60.9,
+      "fun": 67.2,
       "relaxing": 6.2,
       "no_ads": 4.7,
-      "story_building": 12.5
+      "story_building": 6.2
      }
     },
     {
@@ -1729,102 +1723,102 @@
      "n_pos": 50,
      "avg_rating": 2.8,
      "neg": {
-      "ad_mismatch": 1.5,
+      "ad_mismatch": 3.1,
       "save_king": 0.0,
-      "money": 32.3,
-      "difficulty": 26.2,
+      "money": 36.9,
+      "difficulty": 27.7,
       "boring": 1.5,
       "bugs": 4.6
      },
      "pos": {
-      "fun": 62.0,
+      "fun": 70.0,
       "relaxing": 4.0,
       "no_ads": 10.0,
-      "story_building": 4.0
+      "story_building": 2.0
      }
     },
     {
      "month": "2026-10",
-     "n": 391,
-     "n_neg": 116,
+     "n": 390,
+     "n_neg": 115,
      "n_pos": 252,
      "avg_rating": 3.67,
      "neg": {
-      "ad_mismatch": 0.9,
+      "ad_mismatch": 1.7,
       "save_king": 0.0,
-      "money": 28.4,
-      "difficulty": 23.3,
+      "money": 33.0,
+      "difficulty": 27.0,
       "boring": 2.6,
-      "bugs": 3.4
+      "bugs": 5.2
      },
      "pos": {
-      "fun": 33.7,
-      "relaxing": 4.0,
+      "fun": 44.8,
+      "relaxing": 3.6,
       "no_ads": 2.0,
-      "story_building": 1.6
+      "story_building": 1.2
      }
     },
     {
      "month": "2026-11",
-     "n": 309,
-     "n_neg": 112,
-     "n_pos": 178,
-     "avg_rating": 3.4,
+     "n": 317,
+     "n_neg": 118,
+     "n_pos": 179,
+     "avg_rating": 3.36,
      "neg": {
-      "ad_mismatch": 1.8,
+      "ad_mismatch": 2.5,
       "save_king": 0.0,
-      "money": 38.4,
-      "difficulty": 28.6,
-      "boring": 5.4,
-      "bugs": 1.8
+      "money": 44.1,
+      "difficulty": 39.0,
+      "boring": 5.1,
+      "bugs": 2.5
      },
      "pos": {
-      "fun": 30.3,
-      "relaxing": 3.9,
+      "fun": 36.3,
+      "relaxing": 3.4,
       "no_ads": 2.2,
-      "story_building": 3.4
+      "story_building": 1.7
      }
     }
    ],
    "quotes": {
+    "difficulty": [
+     {
+      "date": "2026-11-09",
+      "rating": 1,
+      "store": "app_store",
+      "text": "Playrix Has Ruined Homescapes — A Disgraceful Cash Grab!. I’ve been playing Homescapes since January 2023, and I’ve reached LEVEL 21,401! I’m not some casual…"
+     },
+     {
+      "date": "2026-11-09",
+      "rating": 2,
+      "store": "app_store",
+      "text": "They’re making it really hard. They’re making it harder and almost impossible to get gold cards and get rewards. All they care is to sell coin for $."
+     },
+     {
+      "date": "2026-11-09",
+      "rating": 1,
+      "store": "app_store",
+      "text": "Powerups no longer working right. Apparently the developers of this game wanted to make everything harder (makes sense, harder levels = more money spent on…"
+     }
+    ],
     "fun": [
+     {
+      "date": "2026-11-09",
+      "rating": 3,
+      "store": "app_store",
+      "text": "good overall. k i’m just confused i love this game im close to level 8000 but it updated several months ago to give me all new obstacles and stuff in the…"
+     },
+     {
+      "date": "2026-11-09",
+      "rating": 1,
+      "store": "app_store",
+      "text": "Playrix Has Ruined Homescapes — A Disgraceful Cash Grab!. I’ve been playing Homescapes since January 2023, and I’ve reached LEVEL 21,401! I’m not some casual…"
+     },
      {
       "date": "2026-11-09",
       "rating": 5,
       "store": "google_play",
       "text": "it a game that you can play and enjoy with no stupid ads and level up easily."
-     },
-     {
-      "date": "2026-11-09",
-      "rating": 4,
-      "store": "google_play",
-      "text": "I find the ads for this game disgusting. I don't think its cute when women,kids,and animals are abused cold and hungry. that being said I love love love the…"
-     },
-     {
-      "date": "2026-11-09",
-      "rating": 1,
-      "store": "google_play",
-      "text": "Use to be fun but now it is almost impossible to pass the normal levels without using coins or boosts"
-     }
-    ],
-    "story_building": [
-     {
-      "date": "2026-11-09",
-      "rating": 5,
-      "store": "google_play",
-      "text": "I like this because you actually beat levels to earn energy for the story. the mini games are fun and story intriguing. Fun"
-     },
-     {
-      "date": "2026-11-08",
-      "rating": 4,
-      "store": "google_play",
-      "text": "the changes I make to the house aren't saving anymore, I change something and close the game and get back on again and it's back the way it was before I…"
-     },
-     {
-      "date": "2026-11-08",
-      "rating": 1,
-      "store": "app_store",
-      "text": "Issues with game. I have given one star for several reasons。First，i have been unable to get my previous levels and purchases restored for this game. Secondly,…"
      }
     ],
     "money": [
@@ -1836,15 +1830,15 @@
      },
      {
       "date": "2026-11-09",
-      "rating": 1,
+      "rating": 3,
       "store": "app_store",
-      "text": "Powerups no longer working right. Apparently the developers of this game wanted to make everything harder (makes sense, harder levels = more money spent on…"
+      "text": "good overall. k i’m just confused i love this game im close to level 8000 but it updated several months ago to give me all new obstacles and stuff in the…"
      },
      {
       "date": "2026-11-09",
       "rating": 1,
-      "store": "google_play",
-      "text": "the more you play the harder it gets, I just think we are expedited to pay, I have been playing for a long time, and I'm so disappointed"
+      "store": "app_store",
+      "text": "Playrix Has Ruined Homescapes — A Disgraceful Cash Grab!. I’ve been playing Homescapes since January 2023, and I’ve reached LEVEL 21,401! I’m not some casual…"
      }
     ],
     "bugs": [
@@ -1876,35 +1870,15 @@
      },
      {
       "date": "2026-11-07",
-      "rating": 1,
-      "store": "app_store",
-      "text": "Recent update is awful. The most recent update has made levels significantly harder, more coins for extra moves, not to mention less coins rewarded for beating…"
+      "rating": 4,
+      "store": "google_play",
+      "text": "this game is so amazing! its relaxing,no ads,and free i love how your suoppose to do fun puzzels and clean and deacorate the house of your own choice i…"
      },
      {
       "date": "2026-11-07",
       "rating": 5,
       "store": "google_play",
-      "text": "very good and removes stress and good storyline"
-     }
-    ],
-    "difficulty": [
-     {
-      "date": "2026-11-09",
-      "rating": 1,
-      "store": "google_play",
-      "text": "Use to be fun but now it is almost impossible to pass the normal levels without using coins or boosts"
-     },
-     {
-      "date": "2026-11-09",
-      "rating": 5,
-      "store": "google_play",
-      "text": "Addicting, although some levels are so hard and take days to win. Please, make it less difficult"
-     },
-     {
-      "date": "2026-11-09",
-      "rating": 1,
-      "store": "google_play",
-      "text": "this is the worst game ever . every events that happen in the game , like the spin in which you have to free the earth's elements and bloom the flower etc is…"
+      "text": "it does help my concentration & the game is comfortable & calms my anxious"
      }
     ],
     "boring": [
@@ -1927,7 +1901,33 @@
       "text": "Expensive & no new side quests. I’ve been playing this game for years but have been seriously disappointed with changes just in the past year or two. They…"
      }
     ],
+    "story_building": [
+     {
+      "date": "2026-11-09",
+      "rating": 5,
+      "store": "google_play",
+      "text": "I like this because you actually beat levels to earn energy for the story. the mini games are fun and story intriguing. Fun"
+     },
+     {
+      "date": "2026-11-08",
+      "rating": 1,
+      "store": "google_play",
+      "text": "Uninstalled. They've made some of the levels next to impossible to pass so you have to buy coins/power ups to move on Like other games of this type, it's bait…"
+     },
+     {
+      "date": "2026-11-08",
+      "rating": 1,
+      "store": "app_store",
+      "text": "Issues with game. I have given one star for several reasons。First，i have been unable to get my previous levels and purchases restored for this game. Secondly,…"
+     }
+    ],
     "ad_mismatch": [
+     {
+      "date": "2026-11-09",
+      "rating": 1,
+      "store": "app_store",
+      "text": "FALSE AD. Please do not believe the Ad it’s false, I’ve been playing this game for years, and what the ad is showing I’ve never played that in this game!!!!…"
+     },
      {
       "date": "2026-11-06",
       "rating": 1,
@@ -1939,12 +1939,6 @@
       "rating": 2,
       "store": "google_play",
       "text": "Devs obviously have never heard of \"if it ain't broke don't fix it\"; the new mechanics are unnecessary and not as fun as the old ones, the ultra hard levels…"
-     },
-     {
-      "date": "2026-10-30",
-      "rating": 5,
-      "store": "google_play",
-      "text": "Fake Ads are fun! At least have this as a side quest."
      }
     ],
     "no_ads": [
@@ -1977,9 +1971,29 @@
    "theme": "money",
    "label": "Money / pay to win",
    "month": "2026-10",
-   "share": 31.4,
-   "baseline": 21.2,
-   "change": 10.2
+   "share": 34.6,
+   "baseline": 21.7,
+   "change": 12.9
+  },
+  {
+   "game": "homescapes",
+   "game_name": "Homescapes",
+   "theme": "difficulty",
+   "label": "Too hard / stuck",
+   "month": "2026-10",
+   "share": 27.0,
+   "baseline": 19.2,
+   "change": 7.8
+  },
+  {
+   "game": "royal_kingdom",
+   "game_name": "Royal Kingdom",
+   "theme": "difficulty",
+   "label": "Too hard / stuck",
+   "month": "2026-10",
+   "share": 15.4,
+   "baseline": 10.1,
+   "change": 5.3
   }
  ]
 }
