@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Match-3 Review Tracker</title>
+<style>
+.viz-root {
+  color-scheme: light;
+  --page: #f9f9f7; --surface-1: #fcfcfb; --text-primary: #0b0b0b; --text-secondary: #52514e; --muted: #898781;
+  --grid: #e1e0d9; --axis: #c3c2b7; --border: rgba(11,11,11,0.10);
+  --series-1: #2a78d6; --series-2: #eb6834; --series-3: #1baf7a; --series-4: #eda100;
+  --warning: #fab219; --seq-100:#cde2fb; --seq-200:#9ec5f4; --seq-300:#6da7ec; --seq-400:#3987e5; --seq-500:#256abf; --seq-600:#184f95;
+}
+@media (prefers-color-scheme: dark) {
+  :root:where(:not([data-theme="light"])) .viz-root {
+    color-scheme: dark;
+    --page: #0d0d0d; --surface-1: #1a1a19; --text-primary: #f0efec; --text-secondary: #c3c2b7; --muted: #898781;
+    --grid: #2c2c2a; --axis: #383835; --border: rgba(255,255,255,0.10);
+    --series-1: #3987e5; --series-2: #d95926; --series-3: #199e70; --series-4: #c98500;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+.viz-root { background: var(--page); color: var(--text-primary); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; min-height: 100vh; }
+main { max-width: 1120px; margin: 0 auto; padding: 32px 20px 64px; display: flex; flex-direction: column; gap: 24px; }
+h1 { font-size: 28px; margin: 0; letter-spacing: -0.01em; }
+h2 { font-size: 18px; margin: 0 0 4px; }
+p { margin: 0; }
+.sub { color: var(--text-secondary); }
+.muted { color: var(--muted); font-size: 13px; }
+.card { background: var(--surface-1); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+.tile { display: flex; flex-direction: column; gap: 6px; }
+.tile .name { display: flex; align-items: center; gap: 8px; font-weight: 600; }
+.swatch { width: 10px; height: 10px; border-radius: 3px; flex: none; }
+.tile .big { font-size: 28px; font-weight: 650; font-variant-numeric: tabular-nums; }
+.tile .row { display: flex; gap: 16px; color: var(--text-secondary); font-size: 13px; font-variant-numeric: tabular-nums; }
+.alerts { display: flex; flex-direction: column; gap: 8px; }
+.alert { display: flex; gap: 10px; align-items: flex-start; padding: 10px 12px; border-radius: 8px; border: 1px solid var(--border); }
+.alert .icon { width: 20px; height: 20px; border-radius: 50%; background: var(--warning); color: #0b0b0b; font-weight: 700; display: grid; place-items: center; font-size: 13px; flex: none; }
+.controls { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin: 8px 0 12px; }
+select { font: inherit; padding: 6px 10px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface-1); color: var(--text-primary); }
+.heat { width: 100%; border-collapse: separate; border-spacing: 2px; font-variant-numeric: tabular-nums; }
+.heat th { font-weight: 500; font-size: 13px; color: var(--text-secondary); text-align: left; padding: 6px 8px; }
+.heat th.col { text-align: center; }
+.heat td { text-align: center; padding: 10px 6px; border-radius: 4px; font-size: 14px; }
+.legend { display: flex; flex-wrap: wrap; gap: 16px; font-size: 13px; color: var(--text-secondary); }
+.legend span { display: inline-flex; align-items: center; gap: 6px; }
+.chart-wrap { position: relative; }
+svg text { fill: var(--muted); font-size: 12px; }
+.tip { position: absolute; pointer-events: none; background: var(--surface-1); border: 1px solid var(--border); border-radius: 8px; padding: 8px 10px; font-size: 13px; box-shadow: 0 4px 16px rgba(0,0,0,0.12); display: none; min-width: 180px; font-variant-numeric: tabular-nums; }
+.tip .r { display: flex; align-items: center; gap: 6px; justify-content: space-between; }
+.quotes { display: flex; flex-direction: column; gap: 10px; }
+.quote { border-left: 3px solid var(--grid); padding: 4px 12px; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+@media (max-width: 800px) { .two { grid-template-columns: 1fr; } }
+details summary { cursor: pointer; color: var(--text-secondary); }
+table.data { border-collapse: collapse; font-size: 13px; margin-top: 8px; font-variant-numeric: tabular-nums; }
+table.data td, table.data th { padding: 4px 10px; border-bottom: 1px solid var(--grid); text-align: right; }
+table.data th:first-child, table.data td:first-child { text-align: left; }
+</style>
+</head>
+<body>
+<div class="viz-root">
+<main>
+  <header style="display:flex;flex-direction:column;gap:6px">
+    <h1>Match-3 Review Tracker</h1>
+    <p class="sub">What players say about Royal Match, Royal Kingdom and two genre leaders, updated automatically from App Store and Google Play reviews.</p>
+    <p class="muted" id="meta">Loading…</p>
+  </header>
+
+  <section class="tiles" id="tiles"></section>
+
+  <section class="card" id="alerts-card">
+    <h2>Alerts</h2>
+    <p class="muted">A complaint theme whose share of negative reviews rose clearly in the last complete month, compared with the three months before.</p>
+    <div class="alerts" id="alerts" style="margin-top:12px"></div>
+  </section>
+
+  <section class="two">
+    <div class="card">
+      <h2>What players complain about</h2>
+      <p class="muted">Share of 1–2★ reviews mentioning each theme (all months). A review can mention several themes.</p>
+      <table class="heat" id="heat-neg" style="margin-top:12px"></table>
+    </div>
+    <div class="card">
+      <h2>What players praise</h2>
+      <p class="muted">Share of 4–5★ reviews mentioning each theme (all months).</p>
+      <table class="heat" id="heat-pos" style="margin-top:12px"></table>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Trend by month</h2>
+    <div class="controls">
+      <label>Theme <select id="theme-select"></select></label>
+      <span class="muted" id="trend-note"></span>
+    </div>
+    <div class="legend" id="legend"></div>
+    <div class="chart-wrap" id="chart-wrap"><svg id="trend" width="100%" height="320" role="img" aria-label="Monthly trend of the selected theme for each game"></svg><div class="tip" id="tip"></div></div>
+    <details style="margin-top:12px"><summary>Show as table</summary><div id="trend-table"></div></details>
+  </section>
+
+  <section class="card">
+    <h2>In players' words</h2>
+    <div class="controls">
+      <label>Game <select id="q-game"></select></label>
+      <label>Theme <select id="q-theme"></select></label>
+    </div>
+    <div class="quotes" id="quotes"></div>
+    <p class="muted" style="margin-top:12px">Short excerpts of recent public reviews, shown without usernames. Full review text is not stored.</p>
+  </section>
+
+  <section class="card">
+    <h2>How it works</h2>
+    <p class="sub" id="method"></p>
+  </section>
+</main>
+</div>
+
+<script>
+const SERIES = ['--series-1', '--series-2', '--series-3', '--series-4'];
+const css = v => getComputedStyle(document.querySelector('.viz-root')).getPropertyValue(v).trim();
+const $ = id => document.getElementById(id);
+const fmt = v => v == null ? '–' : v.toFixed(1) + '%';
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const MIN_N = 20; // months with fewer reviews than this are not plotted
+
+fetch('data.json').then(r => r.json()).then(render).catch(e => { $('meta').textContent = 'Could not load data.json: ' + e; });
+
+function render(d) {
+  const methods = Object.entries(d.methods).map(([k, v]) => `${v.toLocaleString()} by ${k === 'ai' ? 'AI' : 'keyword rules'}`).join(', ');
+  $('meta').textContent = `${d.n.toLocaleString()} reviews from ${d.first_date} to ${d.last_date} · markets: ${d.markets.map(m => m.toUpperCase()).join(', ')} · updated ${d.updated}`;
+
+  // Tiles
+  $('tiles').innerHTML = d.games.map((g, i) => `
+    <div class="card tile">
+      <div class="name"><span class="swatch" style="background:var(${SERIES[i]})"></span>${esc(g.name)}<span class="muted">${esc(g.studio)}</span></div>
+      <div class="big">${g.avg_rating == null ? '–' : g.avg_rating.toFixed(2)}★</div>
+      <div class="muted">average written-review rating</div>
+      <div class="row"><span>${g.n.toLocaleString()} reviews</span><span>${g.n ? Math.round(100 * g.n_neg / g.n) : 0}% negative</span></div>
+    </div>`).join('');
+
+  // Alerts
+  $('alerts').innerHTML = d.alerts.length ? d.alerts.map(a => `
+    <div class="alert"><span class="icon" aria-hidden="true">!</span>
+      <div><b>Warning · ${esc(a.game_name)}: "${esc(a.label)}"</b><br>
+      <span class="sub">${a.share}% of negative reviews in ${a.month}, up ${a.change} points from ${a.baseline}% over the previous three months.</span></div></div>`).join('')
+    : '<p class="sub">No unusual changes in the last complete month.</p>';
+
+  // Heatmaps
+  heat($('heat-neg'), d, d.negative_themes, 'neg');
+  heat($('heat-pos'), d, d.positive_themes, 'pos');
+
+  // Trend
+  const sel = $('theme-select');
+  sel.innerHTML = `<optgroup label="Complaints (share of 1–2★)">${d.negative_themes.map(t => `<option value="neg:${t}">${esc(d.themes[t].label)}</option>`).join('')}</optgroup>
+    <optgroup label="Praise (share of 4–5★)">${d.positive_themes.map(t => `<option value="pos:${t}">${esc(d.themes[t].label)}</option>`).join('')}</optgroup>`;
+  $('legend').innerHTML = d.games.map((g, i) => `<span><span class="swatch" style="background:var(${SERIES[i]})"></span>${esc(g.name)}</span>`).join('');
+  const draw = () => trend(d, sel.value);
+  sel.onchange = draw; window.addEventListener('resize', draw);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', draw);
+  draw();
+
+  // Quotes
+  $('q-game').innerHTML = d.games.map(g => `<option value="${g.key}">${esc(g.name)}</option>`).join('');
+  $('q-theme').innerHTML = Object.entries(d.themes).map(([k, v]) => `<option value="${k}">${esc(v.label)}</option>`).join('');
+  const showQuotes = () => {
+    const g = d.games.find(x => x.key === $('q-game').value);
+    const qs = (g.quotes || {})[$('q-theme').value] || [];
+    $('quotes').innerHTML = qs.length ? qs.map(q => `<div class="quote"><p>“${esc(q.text)}”</p><p class="muted">${q.rating}★ · ${q.store === 'app_store' ? 'App Store' : 'Google Play'} · ${q.date}</p></div>`).join('')
+      : '<p class="sub">No recent example for this combination.</p>';
+  };
+  $('q-game').onchange = $('q-theme').onchange = showQuotes; showQuotes();
+
+  $('method').innerHTML = `Every week a GitHub Action collects the newest public reviews (App Store RSS feed and Google Play), keeps only reviews it has not seen, and tags each one with themes. ` +
+    `Tagging uses an AI model when an API key is set, and keyword rules otherwise (so far: ${esc(methods)}). ` +
+    `Written reviews lean negative compared with store star ratings, so read the numbers as what drives praise and complaints, not overall satisfaction.`;
+}
+
+function heat(table, d, themes, kind) {
+  const max = Math.max(1, ...d.games.flatMap(g => themes.map(t => g[kind][t] || 0)));
+  const steps = ['--seq-100', '--seq-200', '--seq-300', '--seq-400', '--seq-500', '--seq-600'];
+  const cell = v => {
+    if (v == null) return '<td>–</td>';
+    const i = Math.min(steps.length - 1, Math.floor((v / max) * steps.length));
+    return `<td style="background:var(${steps[i]});color:${i >= 3 ? '#ffffff' : '#0b0b0b'}" title="${v}%">${v.toFixed(0)}%</td>`;
+  };
+  table.innerHTML = `<tr><th></th>${d.games.map(g => `<th class="col">${esc(g.name)}</th>`).join('')}</tr>` +
+    themes.map(t => `<tr><th>${esc(d.themes[t].label)}</th>${d.games.map(g => cell(g[kind][t])).join('')}</tr>`).join('');
+}
+
+function trend(d, value) {
+  const [kind, theme] = value.split(':');
+  const nKey = kind === 'neg' ? 'n_neg' : 'n_pos';
+  const current = d.updated.slice(0, 7); // the current month is still partial, so leave it out
+  const idx = d.games[0].monthly.map((m, i) => i).filter(i => d.games[0].monthly[i].month < current);
+  const months = idx.map(i => d.games[0].monthly[i].month);
+  const series = d.games.map((g, i) => ({ name: g.name, color: css(SERIES[i]),
+    pts: idx.map(i => g.monthly[i]).map(m => ({ v: m[nKey] >= MIN_N ? m[kind][theme] : null, n: m[nKey] })) }));
+  $('trend-note').textContent = `${kind === 'neg' ? 'Share of 1–2★ reviews' : 'Share of 4–5★ reviews'} · complete months only; months with fewer than ${MIN_N} reviews are left out`;
+
+  const svg = $('trend'), W = svg.clientWidth || 800, H = 320, L = 44, R = 120, T = 12, B = 32;
+  const vals = series.flatMap(s => s.pts.map(p => p.v)).filter(v => v != null);
+  const top = Math.max(10, ...vals), step = top <= 50 ? 10 : 20, ymax = Math.ceil(top / step) * step;
+  const x = i => L + (months.length < 2 ? 0 : i * (W - L - R) / (months.length - 1));
+  const y = v => T + (H - T - B) * (1 - v / ymax);
+  let s = '';
+  for (let v = 0; v <= ymax; v += step) {
+    s += `<line x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}" stroke="${css(v === 0 ? '--axis' : '--grid')}" stroke-width="1"/>`;
+    s += `<text x="${L - 8}" y="${y(v) + 4}" text-anchor="end">${v}%</text>`;
+  }
+  months.forEach((m, i) => { if (i % Math.ceil(months.length / 8) === 0 || i === months.length - 1) s += `<text x="${x(i)}" y="${H - 10}" text-anchor="middle">${m}</text>`; });
+  const ends = [];
+  series.forEach(se => {
+    let path = '', pen = false;
+    se.pts.forEach((p, i) => { if (p.v == null) { pen = false; return; } path += `${pen ? 'L' : 'M'}${x(i)},${y(p.v)}`; pen = true; });
+    s += `<path d="${path}" fill="none" stroke="${se.color}" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>`;
+    let li = se.pts.length - 1; while (li >= 0 && se.pts[li].v == null) li--;
+    if (li >= 0) ends.push({ y: y(se.pts[li].v), x: x(li), name: se.name, color: se.color, v: se.pts[li].v });
+  });
+  // direct labels at line ends, nudged apart so they don't collide
+  ends.sort((a, b) => a.y - b.y);
+  for (let i = 1; i < ends.length; i++) if (ends[i].y - ends[i - 1].y < 16) ends[i].y = ends[i - 1].y + 16;
+  ends.forEach(e => { s += `<circle cx="${e.x}" cy="${e.y}" r="4" fill="${e.color}" stroke="${css('--surface-1')}" stroke-width="2"/>`;
+    s += `<text x="${e.x + 10}" y="${e.y + 4}" style="fill:${css('--text-secondary')}">${esc(e.name)}</text>`; });
+  s += `<line id="xh" y1="${T}" y2="${H - B}" stroke="${css('--axis')}" stroke-width="1" visibility="hidden"/>`;
+  s += `<rect x="${L}" y="${T}" width="${W - L - R}" height="${H - T - B}" fill="transparent" id="hit"/>`;
+  svg.innerHTML = s;
+
+  const tip = $('tip'), hit = svg.querySelector('#hit'), xh = svg.querySelector('#xh');
+  hit.onmousemove = ev => {
+    const bx = svg.getBoundingClientRect(), px = ev.clientX - bx.left;
+    const i = Math.max(0, Math.min(months.length - 1, Math.round((px - L) / ((W - L - R) / Math.max(1, months.length - 1)))));
+    xh.setAttribute('x1', x(i)); xh.setAttribute('x2', x(i)); xh.setAttribute('visibility', 'visible');
+    tip.innerHTML = `<b>${months[i]}</b>` + series.map(se => `<div class="r"><span><span class="swatch" style="display:inline-block;background:${se.color}"></span> ${esc(se.name)}</span><span>${fmt(se.pts[i].v)} <span class="muted">n=${se.pts[i].n}</span></span></div>`).join('');
+    tip.style.display = 'block';
+    const left = Math.min(x(i) + 12, W - 200);
+    tip.style.left = left + 'px'; tip.style.top = (T + 8) + 'px';
+  };
+  hit.onmouseleave = () => { tip.style.display = 'none'; xh.setAttribute('visibility', 'hidden'); };
+
+  $('trend-table').innerHTML = `<table class="data"><tr><th>Month</th>${series.map(se => `<th>${esc(se.name)}</th>`).join('')}</tr>` +
+    months.map((m, i) => `<tr><td>${m}</td>${series.map(se => `<td>${fmt(se.pts[i].v)}</td>`).join('')}</tr>`).join('') + '</table>';
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "games": [
+    {"key": "royal_match",   "name": "Royal Match",      "studio": "Dream Games", "ios_id": "1482155847", "android_id": "com.dreamgames.royalmatch"},
+    {"key": "royal_kingdom", "name": "Royal Kingdom",    "studio": "Dream Games", "ios_id": "1606549505", "android_id": "com.dreamgames.royalkingdom"},
+    {"key": "candy_crush",   "name": "Candy Crush Saga", "studio": "King",        "ios_id": "553834731",  "android_id": "com.king.candycrushsaga"},
+    {"key": "homescapes",    "name": "Homescapes",       "studio": "Playrix",     "ios_id": "1195621598", "android_id": "com.playrix.homescapes"}
+  ],
+  "markets": ["us", "gb", "ca", "au"],
+  "appstore_pages": 10,
+  "googleplay_reviews_per_market": 500,
+  "llm_max_reviews_per_run": 600,
+  "llm_batch_size": 50,
+  "quote_max_chars": 160,
+  "alert_min_reviews": 40,
+  "alert_threshold_points": 5
+}
