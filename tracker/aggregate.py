@@ -1,7 +1,7 @@
 """Turn stored reviews into the numbers the dashboard shows (docs/data.json)."""
 import json
 from collections import defaultdict
-from datetime import date
+from datetime import date, timedelta
 
 from .themes import NEGATIVE_THEMES, POSITIVE_THEMES, THEMES
 
@@ -38,7 +38,8 @@ def build(rows: list[dict], quotes: dict, config: dict, months: int = 12) -> dic
         # Alert: latest complete month vs. the average of the three months before it.
         this_month = date.today().strftime("%Y-%m")
         usable = [m for m in monthly if m["month"] < this_month and m["n_neg"] >= config["alert_min_reviews"]]
-        if len(usable) >= 2:
+        last_complete = (date.today().replace(day=1) - timedelta(days=1)).strftime("%Y-%m")
+        if len(usable) >= 2 and usable[-1]["month"] == last_complete:  # only alert on last month, never stale ones
             last, prev = usable[-1], usable[-4:-1]
             for t in NEGATIVE_THEMES:
                 base = sum(p["neg"][t] for p in prev) / len(prev)

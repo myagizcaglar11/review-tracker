@@ -47,8 +47,14 @@ def test_text_is_never_saved(tmp_path):
 
 
 def test_alert_fires_on_spike():
+    from datetime import date, timedelta
+    def month(back):
+        d = date.today().replace(day=1)
+        for _ in range(back):
+            d = (d - timedelta(days=1)).replace(day=1)
+        return d.strftime("%Y-%m")
     rows = []
-    for m, share in [("2026-07", 0.1), ("2026-08", 0.1), ("2026-09", 0.1), ("2026-10", 0.4)]:
+    for m, share in [(month(4), 0.1), (month(3), 0.1), (month(2), 0.1), (month(1), 0.4)]:
         for i in range(100):
             rows.append({"game": "royal_match", "date": f"{m}-05", "rating": 1, "method": "rules",
                          "store": "app_store", "themes": ["ad_mismatch"] if i < share * 100 else []})
