@@ -49,7 +49,7 @@ cd docs && python -m http.server               # open http://localhost:8000
 
 - Written reviews lean negative compared with star ratings, so the numbers show what drives praise and complaints, not overall satisfaction.
 - The stores only expose recent reviews, so history builds up week by week from the first run.
-- Keyword rules only understand English and miss sarcasm; the AI classifier is better but limited by free-tier quotas.
+- Keyword rules only understand English and miss paraphrases; on a hold-out check they were right 87% of the time and caught 69% of real mentions, and they undercount "the ad is not the game" (see [EVALUATION.md](EVALUATION.md)). The AI classifier should do better but is limited by free-tier quotas.
 - This is an independent project using public data. It is not affiliated with Dream Games, King or Playrix.
 
 ## About

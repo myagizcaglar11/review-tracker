@@ -60,3 +60,10 @@ def test_alert_fires_on_spike():
                          "store": "app_store", "themes": ["ad_mismatch"] if i < share * 100 else []})
     data = aggregate.build(rows, {}, CONFIG)
     assert data["alerts"] and data["alerts"][0]["theme"] == "ad_mismatch" and data["alerts"][0]["change"] == 30.0
+
+
+def test_curly_apostrophes_and_negations():
+    assert "ad_mismatch" in rule_themes("The ads for it aren’t actually what the game is")
+    assert "fun" not in rule_themes("Can’t enjoy it anymore, it’s not fun anymore")
+    assert "boring" not in rule_themes("You can’t be boring with this game")
+    assert "money" in rule_themes("900 coins for 5 more moves")
