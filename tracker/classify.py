@@ -20,7 +20,7 @@ from .themes import THEMES, rule_themes
 log = logging.getLogger(__name__)
 
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
-DEFAULT_MODEL = "gemini-2.5-flash"
+DEFAULT_MODEL = "gemini-3.8-flash"
 
 PROMPT = """You label mobile game store reviews with themes.
 Themes (key: meaning):
