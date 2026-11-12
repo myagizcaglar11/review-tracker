@@ -20,6 +20,7 @@ from .themes import THEMES, rule_themes
 log = logging.getLogger(__name__)
 
 GEMINI_URL = "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+DEFAULT_MODEL = "gemini-2.5-flash"
 
 PROMPT = """You label mobile game store reviews with themes.
 Themes (key: meaning):
@@ -39,8 +40,9 @@ def _gemini_batch(batch: list[dict], api_key: str, model: str) -> dict[int, list
         "contents": [{"parts": [{"text": PROMPT.format(themes=themes, reviews=reviews)}]}],
         "generationConfig": {"responseMimeType": "application/json", "temperature": 0},
     }
-    r = requests.post(GEMINI_URL.format(model=model), params={"key": api_key}, json=body, timeout=120)
-    r.raise_for_status()
+    r = requests.post(GEMINI_URL.format(model=model), headers={"x-goog-api-key": api_key}, json=body, timeout=120)
+    if r.status_code != 200:
+        raise RuntimeError(f"Gemini returned HTTP {r.status_code}: {r.text[:300]}")
     text = r.json()["candidates"][0]["content"]["parts"][0]["text"]
     parsed = json.loads(text)
     valid = set(THEMES)
@@ -50,7 +52,7 @@ def _gemini_batch(batch: list[dict], api_key: str, model: str) -> dict[int, list
 def classify(rows: list[dict], config: dict) -> list[dict]:
     """Add 'themes' (list of keys) and 'method' to each row, in place."""
     api_key = os.environ.get("GEMINI_API_KEY", "").strip()
-    model = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash")
+    model = os.environ.get("GEMINI_MODEL", "").strip() or DEFAULT_MODEL
     budget = config.get("llm_max_reviews_per_run", 0) if api_key else 0
     size = config.get("llm_batch_size", 50)
 

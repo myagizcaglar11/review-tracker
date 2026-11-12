@@ -74,8 +74,14 @@ table.data th:first-child, table.data td:first-child { text-align: left; }
 
   <section class="card" id="alerts-card">
     <h2>Alerts</h2>
-    <p class="muted">A complaint theme whose share of negative reviews rose clearly in the last complete month, compared with the three months before.</p>
+    <p class="muted">A complaint theme whose share of negative reviews rose clearly in the last complete month, compared with the three months before, with the same store and country mix on both sides.</p>
     <div class="alerts" id="alerts" style="margin-top:12px"></div>
+  </section>
+
+  <section class="card">
+    <h2>What moved in the last 30 days</h2>
+    <p class="muted">Against the 90 days before, same store and country mix, only changes of 3+ points that random noise is unlikely to explain.</p>
+    <table class="data" id="changes" style="margin-top:12px;width:100%"></table>
   </section>
 
   <section class="two">
@@ -149,6 +155,13 @@ function render(d) {
       <span class="sub">${a.share}% of negative reviews in ${a.month}, up ${a.change} points from ${a.baseline}% over the previous three months.</span></div></div>`).join('')
     : '<p class="sub">No unusual changes in the last complete month.</p>';
 
+  // Changes
+  const ch = d.changes || [];
+  $('changes').innerHTML = ch.length
+    ? '<tr><th>Game</th><th>Theme</th><th>Before</th><th>Last 30 days</th><th>Change</th></tr>' + ch.slice(0, 10).map(c =>
+        `<tr><td>${esc(c.game_name)}</td><td>${esc(c.label)} <span class="muted">(${c.kind === 'complaint' ? '1–2★' : '4–5★'})</span></td><td>${c.before}%</td><td>${c.now}%</td><td><b>${c.change > 0 ? '▲ +' : '▼ '}${c.change}</b> pts</td></tr>`).join('')
+    : '<tr><td class="sub">No clear change in the last 30 days.</td></tr>';
+
   // Heatmaps
   heat($('heat-neg'), d, d.negative_themes, 'neg');
   heat($('heat-pos'), d, d.positive_themes, 'pos');
@@ -199,7 +212,7 @@ function trend(d, value) {
   const months = idx.map(i => d.games[0].monthly[i].month);
   const series = d.games.map((g, i) => ({ name: g.name, color: css(SERIES[i]),
     pts: idx.map(i => g.monthly[i]).map(m => ({ v: m[nKey] >= MIN_N ? m[kind][theme] : null, n: m[nKey] })) }));
-  $('trend-note').textContent = `${kind === 'neg' ? 'Share of 1–2★ reviews' : 'Share of 4–5★ reviews'} · complete months only; months with fewer than ${MIN_N} reviews are left out`;
+  $('trend-note').textContent = `${kind === 'neg' ? 'Share of 1–2★ reviews' : 'Share of 4–5★ reviews'} · complete months only; months with fewer than ${MIN_N} reviews are left out; the store and country mix varies by month`;
 
   const svg = $('trend'), W = svg.clientWidth || 800, H = 320, L = 44, R = 120, T = 12, B = 32;
   const vals = series.flatMap(s => s.pts.map(p => p.v)).filter(v => v != null);

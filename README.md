@@ -32,7 +32,19 @@ Google Play  ──┘
 | Dashboard | `docs/index.html` | Static page on GitHub Pages: tiles, alerts, heatmaps, monthly trend, example quotes |
 | Schedule | `.github/workflows/update.yml` | Runs every Monday and commits the new data |
 
+| Weekly summary | `SUMMARY.md` | Alerts and what moved in the last 30 days, written by each weekly run |
+| Evaluation | `tracker/evaluate.py` | Scores the keyword rules (and the AI, if a key is set) against reference labels; run it from the Actions tab ("Evaluate classifiers") |
+
+**Comparing like with like.** Recent weeks hold more Google Play and US reviews than older months, and those are written differently. Alerts and 30-day changes therefore compare each store and country with itself, weighted by the recent mix, so a shift in the mix is not reported as a shift in opinion.
+
 Change games, markets or limits in `config.json`. Change themes in `tracker/themes.py`.
+
+### Turning on the AI classifier
+
+1. Create a free API key in Google AI Studio and restrict it to the Gemini API.
+2. In this repository: Settings → Secrets and variables → Actions → New repository secret, name `GEMINI_API_KEY`.
+3. Optional: a repository variable `GEMINI_MODEL` to choose the model.
+4. Run "Evaluate classifiers" from the Actions tab to compare AI and keyword rules on the same labeled reviews.
 
 ## Run it locally
 

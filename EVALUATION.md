@@ -27,4 +27,5 @@ On the tuning set v2 reaches 95%+ on most themes, but that is not a fair score: 
 
 - **Shares of "Ad is not the game" are an undercount.** The rules almost never tag it by mistake, but they miss many ways of saying it ("doesn't look like the ads", "the levels advertised don't occur"). Real shares are likely well above what the dashboard shows. Read them as a lower bound and watch the trend, not the level.
 - **What changed in v2:** curly apostrophes (’) are normalized (they silently broke patterns like "doesn't"); "not fun" / "can't enjoy" no longer count as praise; ad complaints are matched in both word orders; more ways to say money, difficulty and bugs.
+- **Re-run the check any time** from the Actions tab ("Evaluate classifiers"); results go to [eval/results.md](eval/results.md), with the AI classifier added once a key is set. Reviews that have dropped out of the store feeds are skipped.
 - **Keyword rules hit a ceiling.** Paraphrases, sarcasm and other languages need the AI classifier (`GEMINI_API_KEY`). The same hold-out set can then compare AI vs. rules.

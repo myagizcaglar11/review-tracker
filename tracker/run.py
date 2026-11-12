@@ -41,6 +41,7 @@ def main(argv=None):
     quotes = json.load(open(QUOTES, encoding="utf-8")) if os.path.exists(QUOTES) else {}
     data = aggregate.build(all_rows, quotes, config)
     aggregate.write(data, DASHBOARD_DATA)
+    aggregate.write_summary(data, os.path.join(ROOT, "SUMMARY.md"))
     log.info("Saved %d reviews in total; %d alerts", len(all_rows), len(data["alerts"]))
 
 

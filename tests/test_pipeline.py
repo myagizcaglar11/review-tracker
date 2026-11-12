@@ -67,3 +67,22 @@ def test_curly_apostrophes_and_negations():
     assert "fun" not in rule_themes("Can’t enjoy it anymore, it’s not fun anymore")
     assert "boring" not in rule_themes("You can’t be boring with this game")
     assert "money" in rule_themes("900 coins for 5 more moves")
+
+
+def test_a_change_in_market_mix_is_not_reported_as_a_change_in_opinion():
+    """Same share within each store, but the recent window has far more Google Play reviews,
+    which mention the theme less. Raw shares would drop; like-for-like shares must not."""
+    from tracker.aggregate import _std_shares
+    def make(store, n, k):
+        return [{"store": store, "country": "us", "themes": ["fun"] if i < k else []} for i in range(n)]
+    before = make("app_store", 100, 60) + make("google_play", 10, 2)    # 60% and 20%
+    recent = make("app_store", 20, 12) + make("google_play", 100, 20)   # same 60% and 20%
+    now, then, _, _ = _std_shares(recent, before, "fun")
+    assert now == then
+
+
+def test_evaluation_scores():
+    from tracker.evaluate import scores
+    items = [{"id": "a", "themes": ["money"]}, {"id": "b", "themes": []}]
+    s = scores(items, {"a": ["money"], "b": ["money"]})
+    assert s["money"]["precision"] == 0.5 and s["money"]["recall"] == 1.0

@@ -1,0 +1,1830 @@
+[
+{
+"id": "ios-14318231115",
+"game": "candy_crush",
+"rating": 3,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": []
+},
+{
+"id": "ios-14747818536",
+"game": "royal_match",
+"rating": 2,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"money",
+"fun"
+]
+},
+{
+"id": "ios-14759045338",
+"game": "candy_crush",
+"rating": 3,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"money",
+"fun"
+]
+},
+{
+"id": "ios-14744381251",
+"game": "royal_kingdom",
+"rating": 3,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"difficulty",
+"fun"
+]
+},
+{
+"id": "ios-14255032760",
+"game": "homescapes",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": []
+},
+{
+"id": "ios-14757627159",
+"game": "candy_crush",
+"rating": 2,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": []
+},
+{
+"id": "ios-14500295440",
+"game": "royal_kingdom",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14694351913",
+"game": "candy_crush",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14686645290",
+"game": "royal_match",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"ad_mismatch"
+]
+},
+{
+"id": "ios-14706455120",
+"game": "homescapes",
+"rating": 4,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"bugs"
+]
+},
+{
+"id": "ios-14670764249",
+"game": "royal_kingdom",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14525254327",
+"game": "royal_kingdom",
+"rating": 3,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun",
+"boring",
+"money"
+]
+},
+{
+"id": "ios-14738650375",
+"game": "royal_match",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"money"
+]
+},
+{
+"id": "ios-14726929279",
+"game": "royal_kingdom",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun",
+"no_ads"
+]
+},
+{
+"id": "ios-14267246326",
+"game": "homescapes",
+"rating": 4,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": []
+},
+{
+"id": "ios-14693443494",
+"game": "candy_crush",
+"rating": 3,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun",
+"money",
+"difficulty",
+"relaxing"
+]
+},
+{
+"id": "ios-14760540717",
+"game": "royal_match",
+"rating": 4,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun",
+"money"
+]
+},
+{
+"id": "ios-14343135810",
+"game": "royal_kingdom",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": []
+},
+{
+"id": "ios-14727818186",
+"game": "royal_kingdom",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14718285207",
+"game": "royal_kingdom",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"ad_mismatch"
+]
+},
+{
+"id": "ios-14712879213",
+"game": "candy_crush",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": []
+},
+{
+"id": "ios-14639017800",
+"game": "homescapes",
+"rating": 3,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"story_building",
+"fun"
+]
+},
+{
+"id": "ios-14726975987",
+"game": "royal_kingdom",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"ad_mismatch"
+]
+},
+{
+"id": "ios-14368834480",
+"game": "royal_kingdom",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"money"
+]
+},
+{
+"id": "ios-14546599887",
+"game": "royal_match",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun",
+"relaxing"
+]
+},
+{
+"id": "ios-14714356928",
+"game": "candy_crush",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"bugs"
+]
+},
+{
+"id": "ios-14744522277",
+"game": "homescapes",
+"rating": 2,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"money"
+]
+},
+{
+"id": "ios-14649084883",
+"game": "royal_match",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14751472908",
+"game": "royal_match",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"money"
+]
+},
+{
+"id": "ios-14758461171",
+"game": "candy_crush",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": []
+},
+{
+"id": "ios-14764468784",
+"game": "royal_match",
+"rating": 2,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"bugs"
+]
+},
+{
+"id": "ios-14607566105",
+"game": "royal_match",
+"rating": 3,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"difficulty",
+"boring",
+"money",
+"fun"
+]
+},
+{
+"id": "ios-14653361734",
+"game": "royal_kingdom",
+"rating": 2,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"ad_mismatch",
+"save_king"
+]
+},
+{
+"id": "ios-14754625412",
+"game": "royal_match",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14183539660",
+"game": "homescapes",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14242671620",
+"game": "homescapes",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": []
+},
+{
+"id": "ios-13925091274",
+"game": "homescapes",
+"rating": 4,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun",
+"money",
+"difficulty"
+]
+},
+{
+"id": "ios-14166738794",
+"game": "homescapes",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": []
+},
+{
+"id": "ios-14740404260",
+"game": "homescapes",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"difficulty",
+"money",
+"fun"
+]
+},
+{
+"id": "ios-14758185318",
+"game": "royal_kingdom",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14740907687",
+"game": "homescapes",
+"rating": 2,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"bugs"
+]
+},
+{
+"id": "ios-14731831647",
+"game": "royal_match",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"difficulty",
+"money",
+"fun"
+]
+},
+{
+"id": "ios-14513177319",
+"game": "royal_match",
+"rating": 3,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"ad_mismatch"
+]
+},
+{
+"id": "ios-14421958183",
+"game": "royal_kingdom",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"money"
+]
+},
+{
+"id": "ios-14553317866",
+"game": "royal_match",
+"rating": 4,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": []
+},
+{
+"id": "ios-14674902684",
+"game": "candy_crush",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"relaxing"
+]
+},
+{
+"id": "ios-14178859681",
+"game": "homescapes",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14732136406",
+"game": "candy_crush",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14749504156",
+"game": "royal_kingdom",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"relaxing"
+]
+},
+{
+"id": "ios-14746126079",
+"game": "royal_match",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14156096759",
+"game": "homescapes",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14143574661",
+"game": "candy_crush",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14575643349",
+"game": "royal_kingdom",
+"rating": 2,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"difficulty",
+"money"
+]
+},
+{
+"id": "ios-14234923450",
+"game": "homescapes",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": []
+},
+{
+"id": "ios-14622442311",
+"game": "homescapes",
+"rating": 2,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"difficulty",
+"money"
+]
+},
+{
+"id": "ios-14752732136",
+"game": "candy_crush",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14761049817",
+"game": "royal_kingdom",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14361953231",
+"game": "candy_crush",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": []
+},
+{
+"id": "ios-14714970057",
+"game": "royal_match",
+"rating": 2,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"money",
+"fun"
+]
+},
+{
+"id": "ios-14261774955",
+"game": "candy_crush",
+"rating": 2,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"difficulty",
+"money"
+]
+},
+{
+"id": "ios-14473209764",
+"game": "candy_crush",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"boring"
+]
+},
+{
+"id": "ios-14681697882",
+"game": "candy_crush",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14742356281",
+"game": "royal_match",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14602649090",
+"game": "royal_kingdom",
+"rating": 3,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"money",
+"fun"
+]
+},
+{
+"id": "ios-14717724637",
+"game": "royal_kingdom",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"ad_mismatch"
+]
+},
+{
+"id": "ios-14748789529",
+"game": "royal_kingdom",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"ad_mismatch"
+]
+},
+{
+"id": "ios-14727523767",
+"game": "candy_crush",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14735119715",
+"game": "homescapes",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14261962911",
+"game": "candy_crush",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"money",
+"difficulty"
+]
+},
+{
+"id": "ios-14743102438",
+"game": "royal_match",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14711217113",
+"game": "candy_crush",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"difficulty",
+"money"
+]
+},
+{
+"id": "ios-14728908088",
+"game": "royal_match",
+"rating": 2,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": []
+},
+{
+"id": "ios-14708217630",
+"game": "royal_kingdom",
+"rating": 2,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"money",
+"fun"
+]
+},
+{
+"id": "ios-14731825540",
+"game": "royal_match",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"ad_mismatch"
+]
+},
+{
+"id": "ios-14339078868",
+"game": "candy_crush",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"bugs"
+]
+},
+{
+"id": "ios-14675747074",
+"game": "candy_crush",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"money",
+"difficulty"
+]
+},
+{
+"id": "ios-14669662094",
+"game": "royal_kingdom",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14737600753",
+"game": "royal_kingdom",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14766526885",
+"game": "homescapes",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14728140164",
+"game": "candy_crush",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": []
+},
+{
+"id": "ios-14293479403",
+"game": "homescapes",
+"rating": 3,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"boring",
+"fun"
+]
+},
+{
+"id": "ios-14754026479",
+"game": "royal_kingdom",
+"rating": 2,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"difficulty",
+"money",
+"fun"
+]
+},
+{
+"id": "ios-14703300641",
+"game": "royal_kingdom",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"money"
+]
+},
+{
+"id": "ios-14707647055",
+"game": "candy_crush",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": []
+},
+{
+"id": "ios-14595663969",
+"game": "homescapes",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14692593682",
+"game": "homescapes",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"boring"
+]
+},
+{
+"id": "ios-14501583537",
+"game": "royal_match",
+"rating": 3,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"save_king",
+"boring"
+]
+},
+{
+"id": "ios-14576353863",
+"game": "royal_match",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"ad_mismatch"
+]
+},
+{
+"id": "ios-14379556362",
+"game": "homescapes",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"difficulty"
+]
+},
+{
+"id": "ios-13940708832",
+"game": "homescapes",
+"rating": 3,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"difficulty",
+"money"
+]
+},
+{
+"id": "ios-14679620339",
+"game": "homescapes",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"money"
+]
+},
+{
+"id": "ios-14730817849",
+"game": "royal_match",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"ad_mismatch"
+]
+},
+{
+"id": "ios-14739160161",
+"game": "candy_crush",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14675754732",
+"game": "royal_kingdom",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"ad_mismatch",
+"save_king",
+"boring"
+]
+},
+{
+"id": "ios-14670853923",
+"game": "homescapes",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": []
+},
+{
+"id": "ios-14768317622",
+"game": "royal_match",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"relaxing",
+"fun"
+]
+},
+{
+"id": "ios-14228500494",
+"game": "homescapes",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": []
+},
+{
+"id": "ios-14670564806",
+"game": "royal_match",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"ad_mismatch"
+]
+},
+{
+"id": "ios-14690765213",
+"game": "candy_crush",
+"rating": 5,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14760593291",
+"game": "royal_match",
+"rating": 1,
+"set": "tuning",
+"countries": [
+"us",
+"gb"
+],
+"themes": [
+"relaxing"
+]
+},
+{
+"id": "ios-13628578141",
+"game": "homescapes",
+"rating": 5,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14010757131",
+"game": "homescapes",
+"rating": 2,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": []
+},
+{
+"id": "ios-14168171621",
+"game": "candy_crush",
+"rating": 5,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-13797602835",
+"game": "candy_crush",
+"rating": 3,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14205377142",
+"game": "candy_crush",
+"rating": 1,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"difficulty"
+]
+},
+{
+"id": "ios-14729076083",
+"game": "royal_kingdom",
+"rating": 1,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"money"
+]
+},
+{
+"id": "ios-14581538102",
+"game": "royal_match",
+"rating": 3,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"fun",
+"ad_mismatch"
+]
+},
+{
+"id": "ios-14024585044",
+"game": "homescapes",
+"rating": 1,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"boring",
+"difficulty",
+"money"
+]
+},
+{
+"id": "ios-14390752548",
+"game": "royal_match",
+"rating": 2,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"ad_mismatch",
+"save_king"
+]
+},
+{
+"id": "ios-14398265741",
+"game": "candy_crush",
+"rating": 5,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"bugs"
+]
+},
+{
+"id": "ios-14752467354",
+"game": "royal_match",
+"rating": 5,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14463380393",
+"game": "royal_match",
+"rating": 5,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14346548520",
+"game": "royal_match",
+"rating": 1,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"difficulty",
+"money"
+]
+},
+{
+"id": "ios-13972795537",
+"game": "royal_kingdom",
+"rating": 5,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"fun",
+"relaxing"
+]
+},
+{
+"id": "ios-14754350559",
+"game": "homescapes",
+"rating": 3,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"money"
+]
+},
+{
+"id": "ios-14235440332",
+"game": "homescapes",
+"rating": 1,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"bugs"
+]
+},
+{
+"id": "ios-14578633020",
+"game": "royal_match",
+"rating": 1,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"ad_mismatch",
+"save_king"
+]
+},
+{
+"id": "ios-14720368121",
+"game": "royal_kingdom",
+"rating": 5,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": []
+},
+{
+"id": "ios-14239109065",
+"game": "royal_kingdom",
+"rating": 5,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": []
+},
+{
+"id": "ios-14066821205",
+"game": "homescapes",
+"rating": 4,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"fun",
+"money",
+"difficulty"
+]
+},
+{
+"id": "ios-14234582749",
+"game": "royal_kingdom",
+"rating": 4,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"ad_mismatch"
+]
+},
+{
+"id": "ios-13917831453",
+"game": "royal_kingdom",
+"rating": 1,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"ad_mismatch",
+"boring"
+]
+},
+{
+"id": "ios-14696143850",
+"game": "candy_crush",
+"rating": 2,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"fun",
+"money"
+]
+},
+{
+"id": "ios-14182222688",
+"game": "royal_kingdom",
+"rating": 1,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"ad_mismatch"
+]
+},
+{
+"id": "ios-14044142944",
+"game": "candy_crush",
+"rating": 1,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"bugs"
+]
+},
+{
+"id": "ios-14195663944",
+"game": "candy_crush",
+"rating": 4,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": []
+},
+{
+"id": "ios-14732928525",
+"game": "royal_match",
+"rating": 5,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14761116048",
+"game": "homescapes",
+"rating": 1,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"difficulty"
+]
+},
+{
+"id": "ios-14328830344",
+"game": "royal_kingdom",
+"rating": 3,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": []
+},
+{
+"id": "ios-14088433621",
+"game": "homescapes",
+"rating": 5,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14216958022",
+"game": "candy_crush",
+"rating": 1,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"bugs"
+]
+},
+{
+"id": "ios-14253334034",
+"game": "royal_kingdom",
+"rating": 2,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"fun",
+"money"
+]
+},
+{
+"id": "ios-14581591329",
+"game": "homescapes",
+"rating": 4,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"difficulty"
+]
+},
+{
+"id": "ios-14582795727",
+"game": "royal_match",
+"rating": 4,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"save_king"
+]
+},
+{
+"id": "ios-14549268601",
+"game": "candy_crush",
+"rating": 1,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"bugs"
+]
+},
+{
+"id": "ios-14567493162",
+"game": "royal_match",
+"rating": 1,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"ad_mismatch",
+"save_king"
+]
+},
+{
+"id": "ios-14310745148",
+"game": "homescapes",
+"rating": 1,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"ad_mismatch"
+]
+},
+{
+"id": "ios-14722806145",
+"game": "royal_match",
+"rating": 1,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"money"
+]
+},
+{
+"id": "ios-14407444135",
+"game": "candy_crush",
+"rating": 5,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"fun"
+]
+},
+{
+"id": "ios-14312066846",
+"game": "royal_kingdom",
+"rating": 1,
+"set": "holdout",
+"countries": [
+"ca",
+"au"
+],
+"themes": [
+"ad_mismatch"
+]
+}
+]

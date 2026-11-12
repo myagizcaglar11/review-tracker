@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11",
+ "updated": "2026-11-12",
  "n": 10000,
  "methods": {
   "rules": 10000
@@ -1966,34 +1966,52 @@
  ],
  "alerts": [
   {
-   "game": "royal_kingdom",
-   "game_name": "Royal Kingdom",
-   "theme": "money",
-   "label": "Money / pay to win",
-   "month": "2026-10",
-   "share": 34.6,
-   "baseline": 21.7,
-   "change": 12.9
-  },
-  {
    "game": "homescapes",
    "game_name": "Homescapes",
    "theme": "difficulty",
    "label": "Too hard / stuck",
    "month": "2026-10",
-   "share": 27.0,
-   "baseline": 19.2,
-   "change": 7.8
+   "share": 25.7,
+   "baseline": 16.3,
+   "change": 9.4
+  }
+ ],
+ "changes": [
+  {
+   "game": "homescapes",
+   "game_name": "Homescapes",
+   "kind": "complaint",
+   "theme": "money",
+   "label": "Money / pay to win",
+   "now": 47.4,
+   "before": 30.3,
+   "change": 17.1,
+   "n_now": 95,
+   "n_before": 181
   },
   {
-   "game": "royal_kingdom",
-   "game_name": "Royal Kingdom",
+   "game": "candy_crush",
+   "game_name": "Candy Crush Saga",
+   "kind": "complaint",
+   "theme": "money",
+   "label": "Money / pay to win",
+   "now": 20.6,
+   "before": 37.0,
+   "change": -16.4,
+   "n_now": 136,
+   "n_before": 207
+  },
+  {
+   "game": "homescapes",
+   "game_name": "Homescapes",
+   "kind": "complaint",
    "theme": "difficulty",
    "label": "Too hard / stuck",
-   "month": "2026-10",
-   "share": 15.4,
-   "baseline": 10.1,
-   "change": 5.3
+   "now": 33.7,
+   "before": 18.3,
+   "change": 15.4,
+   "n_now": 95,
+   "n_before": 181
   }
  ]
 }
