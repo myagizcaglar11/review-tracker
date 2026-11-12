@@ -64,6 +64,12 @@ cd docs && python -m http.server               # open http://localhost:8000
 - Keyword rules only understand English and miss paraphrases; on a hold-out check they were right 87% of the time and caught 69% of real mentions, and they undercount "the ad is not the game" (see [EVALUATION.md](EVALUATION.md)). The AI classifier should do better but is limited by free-tier quotas.
 - This is an independent project using public data. It is not affiliated with Dream Games, King or Playrix.
 
+## What I learned
+
+- **Check your own numbers before trusting them.** My first rules counted "kingdom" as praise for the story, but the word is in Royal Kingdom's name. A 17% finding dropped to about 1% once I measured the rules against labeled reviews.
+- **A change in the data mix can look like a change in opinion.** An alert about rising money complaints disappeared when I compared each store and country with itself. More Google Play reviews had entered the data; players had not changed their minds.
+- **Simple methods have a ceiling, and it helps to know where it is.** Keyword rules are almost never wrong when they tag "the ad is not the game", yet they miss about half of the ways people say it. Knowing that tells me how to read the dashboard: as a lower bound.
+
 ## About
 
 Built by Mehmet Yağız Çağlar (ITU Industrial Engineering) with the help of AI tools, as a follow-up to my Dream Games marketing intern case study.
