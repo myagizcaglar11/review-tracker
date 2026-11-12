@@ -32,6 +32,7 @@ def test_ai_failure_falls_back_to_rules(monkeypatch):
     monkeypatch.setenv("GEMINI_API_KEY", "test")
     def boom(*a, **k): raise RuntimeError("quota")
     monkeypatch.setattr(classify, "_gemini_batch", boom)
+    monkeypatch.setattr(classify.time, "sleep", lambda s: None)  # skip the retry wait in tests
     rows = [{"text": "fake ads", "rating": 1}]
     classify.classify(rows, CONFIG)
     assert rows[0]["method"] == "rules" and "ad_mismatch" in rows[0]["themes"]
