@@ -130,8 +130,8 @@ const MIN_N = 20; // months with fewer reviews than this are not plotted
 fetch('data.json').then(r => r.json()).then(render).catch(e => { $('meta').textContent = 'Could not load data.json: ' + e; });
 
 function render(d) {
-  const methods = Object.entries(d.methods).map(([k, v]) => `${v.toLocaleString()} by ${k === 'ai' ? 'AI' : 'keyword rules'}`).join(', ');
-  $('meta').textContent = `${d.n.toLocaleString()} reviews from ${d.first_date} to ${d.last_date} · markets: ${d.markets.map(m => m.toUpperCase()).join(', ')} · updated ${d.updated}`;
+  const methods = Object.entries(d.methods).map(([k, v]) => `${v.toLocaleString('en-US')} by ${k === 'ai' ? 'AI' : 'keyword rules'}`).join(', ');
+  $('meta').textContent = `${d.n.toLocaleString('en-US')} reviews from ${d.first_date} to ${d.last_date} · markets: ${d.markets.map(m => m.toUpperCase()).join(', ')} · updated ${d.updated}`;
 
   // Tiles
   $('tiles').innerHTML = d.games.map((g, i) => `
@@ -139,7 +139,7 @@ function render(d) {
       <div class="name"><span class="swatch" style="background:var(${SERIES[i]})"></span>${esc(g.name)}<span class="muted">${esc(g.studio)}</span></div>
       <div class="big">${g.avg_rating == null ? '–' : g.avg_rating.toFixed(2)}★</div>
       <div class="muted">average written-review rating</div>
-      <div class="row"><span>${g.n.toLocaleString()} reviews</span><span>${g.n ? Math.round(100 * g.n_neg / g.n) : 0}% negative</span></div>
+      <div class="row"><span>${g.n.toLocaleString('en-US')} reviews</span><span>${g.n ? Math.round(100 * g.n_neg / g.n) : 0}% negative</span></div>
     </div>`).join('');
 
   // Alerts
