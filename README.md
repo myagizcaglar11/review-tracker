@@ -26,7 +26,7 @@ Google Play  ──┘
 | Step | File | What it does |
 |---|---|---|
 | Collect | `tracker/collect.py` | Up to 500 newest reviews per game, store and market (US, GB, CA, AU) |
-| Classify | `tracker/classify.py` | Tags themes with Google Gemini if `GEMINI_API_KEY` is set (any language, batches of 50); otherwise keyword rules from `tracker/themes.py` |
+| Classify | `tracker/classify.py` | Tags themes with Google Gemini if `GEMINI_API_KEY` is set (any language, batches of 20); otherwise keyword rules from `tracker/themes.py` |
 | Store | `tracker/store.py` | Saves one row per review **without the review text or username**, plus a few short example excerpts |
 | Aggregate | `tracker/aggregate.py` | Theme shares per game and month; flags a theme whose share of negative reviews jumped in the last complete month (≥ 5 points and beyond random noise) |
 | Dashboard | `docs/index.html` | Static page on GitHub Pages: tiles, alerts, heatmaps, monthly trend, example quotes |

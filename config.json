@@ -9,7 +9,7 @@
   "appstore_pages": 10,
   "googleplay_reviews_per_market": 500,
   "llm_max_reviews_per_run": 600,
-  "llm_batch_size": 50,
+  "llm_batch_size": 20,
   "quote_max_chars": 160,
   "alert_min_reviews": 40,
   "alert_threshold_points": 5

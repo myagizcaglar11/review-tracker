@@ -40,7 +40,7 @@ def _gemini_batch(batch: list[dict], api_key: str, model: str) -> dict[int, list
         "contents": [{"parts": [{"text": PROMPT.format(themes=themes, reviews=reviews)}]}],
         "generationConfig": {"responseMimeType": "application/json", "temperature": 0},
     }
-    r = requests.post(GEMINI_URL.format(model=model), headers={"x-goog-api-key": api_key}, json=body, timeout=120)
+    r = requests.post(GEMINI_URL.format(model=model), headers={"x-goog-api-key": api_key}, json=body, timeout=300)
     if r.status_code != 200:
         raise RuntimeError(f"Gemini returned HTTP {r.status_code}: {r.text[:300]}")
     text = r.json()["candidates"][0]["content"]["parts"][0]["text"]
@@ -54,21 +54,27 @@ def classify(rows: list[dict], config: dict) -> list[dict]:
     api_key = os.environ.get("GEMINI_API_KEY", "").strip()
     model = os.environ.get("GEMINI_MODEL", "").strip() or DEFAULT_MODEL
     budget = config.get("llm_max_reviews_per_run", 0) if api_key else 0
-    size = config.get("llm_batch_size", 50)
+    size = config.get("llm_batch_size", 20)
 
     todo = [r for r in rows if r.get("text")]
     ai_rows, rule_rows = todo[:budget], todo[budget:]
 
     for start in range(0, len(ai_rows), size):
         batch = ai_rows[start:start + size]
-        try:
-            labels = _gemini_batch(batch, api_key, model)
-            for i, r in enumerate(batch):
-                r["themes"], r["method"] = labels.get(i, []), "ai"
-        except Exception as e:
-            log.warning("AI batch failed (%s); using keyword rules for the rest of this run", e)
+        labels = None
+        for attempt in (1, 2):  # one retry: a slow or dropped answer is often a one-off
+            try:
+                labels = _gemini_batch(batch, api_key, model)
+                break
+            except Exception as e:
+                log.warning("AI batch failed, attempt %d of 2 (%s)", attempt, e)
+                time.sleep(20)
+        if labels is None:
+            log.warning("Using keyword rules for the rest of this run")
             rule_rows = ai_rows[start:] + rule_rows
             break
+        for i, r in enumerate(batch):
+            r["themes"], r["method"] = labels.get(i, []), "ai"
         time.sleep(13)  # stay under a ~5 requests/minute free-tier limit
 
     for r in rule_rows:
